@@ -1,0 +1,12 @@
+year,models,models_with_compute,compute_coverage_pct,organisations,top5_model_share_pct,top5_compute_share_pct,top5_by_models,top5_by_compute
+2015,28,11,39.3,30,51.8,98.7,Microsoft; Google (Alphabet); Carnegie Mellon University (CMU); IEEE; Netflix,Google (Alphabet); University College London (UCL); Microsoft; Beijing Institute of Technology; National University of Singapore
+2016,49,16,32.7,40,50.3,99.9,Google (Alphabet); Microsoft; Meta; Carnegie Mellon University (CMU); University of Oxford,Google (Alphabet); Chinese University of Hong Kong (CUHK); Microsoft; Carnegie Mellon University (CMU); Meta
+2017,55,20,36.4,49,46.1,99.5,Google (Alphabet); Meta; Baidu; Carnegie Mellon University (CMU); Korea Advanced Institute of Science and Technology (KAIST),Google (Alphabet); Carnegie Mellon University (CMU); OpenAI; Meta; Jagiellonian University
+2018,37,24,64.9,33,57.4,99.9,Google (Alphabet); IBM; Meta; Salesforce Research; Microsoft,Meta; Google (Alphabet); OpenAI; University of Washington; Princeton University
+2019,68,38,55.9,48,52.2,98.1,Google (Alphabet); Meta; OpenAI; Nvidia; Allen Institute for AI,Google (Alphabet); OpenAI; Nvidia; Meta; Carnegie Mellon University (CMU)
+2020,50,33,66.0,47,58.0,97.4,Google (Alphabet); Meta; Baidu; University of California (UC) Berkeley; OpenAI,OpenAI; Google (Alphabet); Microsoft; University of Washington; National Institute of Informatics
+2021,79,62,78.5,56,54.1,81.3,Google (Alphabet); Microsoft; Meta; OpenAI; Alibaba,Google (Alphabet); Baidu; Microsoft; Peng Cheng Laboratory; Nvidia
+2022,91,60,65.9,74,55.7,94.7,Google (Alphabet); Meta; OpenAI; Microsoft; University of Oxford,Google (Alphabet); OpenAI; Meta; Tsinghua University; Amazon
+2023,119,65,54.6,120,38.3,88.9,Google (Alphabet); Meta; OpenAI; Alibaba; Anthropic,Google (Alphabet); OpenAI; Inflection AI; Amazon; Technology Innovation Institute
+2024,98,46,46.9,54,38.6,65.4,OpenAI; Google (Alphabet); Nvidia; Alibaba; Meta,Meta; Nvidia; xAI; ByteDance; Anthropic
+2025,107,40,37.4,43,55.1,95.5,OpenAI; Google (Alphabet); Alibaba; Anthropic; xAI,xAI; OpenAI; Meta; Alibaba; Anthropic
