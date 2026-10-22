@@ -1,0 +1,783 @@
+Model,Organization,year,accessibility_raw,release,org_type
+Solar Open 100B,Upstage,2025,Open weights (restricted use),Open weights,Industry
+K-EXAONE,LG AI Research,2025,Open weights (restricted use),Open weights,Industry
+VAETKI,NC AI,2025,Open weights (unrestricted),Open weights,Industry
+A.X K1,SK Telecom,2025,Open weights (unrestricted),Open weights,Industry
+HyperCLOVA X SEED 32B Think,NAVER,2025,Open weights (unrestricted),Open weights,Industry
+MiniMax-M2.1,MiniMax,2025,Open weights (restricted use),Open weights,Industry
+GLM-4.7,Z.ai (Zhipu AI),2025,Open weights (unrestricted),Open weights,Industry
+GPT-5.2 Codex,OpenAI,2025,API access,API or hosted access,Industry
+Nemotron 3-Nano-30B-A3B,Nvidia,2025,Open weights (restricted use),Open weights,Industry
+GPT-5.2 Pro,OpenAI,2025,API access,API or hosted access,Industry
+GPT-5.2,OpenAI,2025,API access,API or hosted access,Industry
+SIMA 2,Google DeepMind,2025,Unreleased,Unreleased,Industry
+DeepSeekMath-V2,DeepSeek,2025,Open weights (unrestricted),Open weights,Industry
+Claude Opus 4.5,Anthropic,2025,API access,API or hosted access,Industry
+Olmo 3,Allen Institute for AI,2025,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+Gemini 3 Pro Image (Nano Banana Pro),Google DeepMind,2025,API access,API or hosted access,Industry
+Grok 4.1 Fast,xAI,2025,API access,API or hosted access,Industry
+GPT-5.1-Codex-Max,OpenAI,2025,API access,API or hosted access,Industry
+Gemini 3 Pro,Google DeepMind,2025,API access,API or hosted access,Industry
+Gemini 3 Deep Think,Google DeepMind,2025,Hosted access (no API),API or hosted access,Industry
+π0.6 (pi-0.6),Physical Intelligence,2025,Unreleased,Unreleased,Industry
+P1-235B-A22B,Shanghai AI Lab,2025,Open weights (unrestricted),Open weights,Academia
+Grok 4.1,xAI,2025,API access,API or hosted access,Industry
+GPT-5.1 Instant,OpenAI,2025,API access,API or hosted access,Industry
+GPT-5.1,OpenAI,2025,API access,API or hosted access,Industry
+GPT-5.1-Codex,OpenAI,2025,API access,API or hosted access,Industry
+Meta's Generative Ads Model (GEM),Meta AI,2025,Unreleased,Unreleased,Industry
+Kaiju Small,Character.ai,2025,Hosted access (no API),API or hosted access,Industry
+Kaiju Medium,Character.ai,2025,Hosted access (no API),API or hosted access,Industry
+Kaiju Large,Character.ai,2025,Hosted access (no API),API or hosted access,Industry
+Kimi K2 Thinking,Moonshot,2025,Open weights (restricted use),Open weights,Industry
+Tongyi DeepResearch,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+MiniMax-M2,MiniMax,2025,Open weights (unrestricted),Open weights,Industry
+Veo 3.1,Google DeepMind,2025,API access,API or hosted access,Industry
+Claude Haiku 4.5,Anthropic,2025,API access,API or hosted access,Industry
+Ling-1T,Ant Group,2025,Open weights (unrestricted),Open weights,Industry
+GPT-5 Pro,OpenAI,2025,API access,API or hosted access,Industry
+Sora 2.0,OpenAI,2025,Hosted access (no API),API or hosted access,Industry
+GLM-4.6,"Z.ai (Zhipu AI),Tsinghua University",2025,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Claude Sonnet 4.5,Anthropic,2025,API access,API or hosted access,Industry
+Gemini Robotics-ER 1.5,Google DeepMind,2025,API access,API or hosted access,Industry
+Qwen3-Omni-30B-A3B,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+AgentFounder-30B,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Qwen3-Max,Alibaba,2025,API access,API or hosted access,Industry
+LongCat-Flash,Meituan Inc,2025,Open weights (unrestricted),Open weights,Industry
+Gemini 2.5 Flash Image (Nano Banana),Google,2025,API access,API or hosted access,Industry
+GPT-5 nano,OpenAI,2025,API access,API or hosted access,Industry
+GPT-5 mini,OpenAI,2025,API access,API or hosted access,Industry
+GPT-5,OpenAI,2025,API access,API or hosted access,Industry
+gpt-oss-120b,OpenAI,2025,Open weights (unrestricted),Open weights,Industry
+gpt-oss-20b,OpenAI,2025,Open weights (unrestricted),Open weights,Industry
+Claude Opus 4.1,Anthropic,2025,API access,API or hosted access,Industry
+Qwen Image,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Hierarchical Reasoning Model (HPM),Sapient Intelligence,2025,Unreleased,Unreleased,Not recorded
+MindLink-72B,Kunlun Inc.,2025,Open weights (unrestricted),Open weights,Industry
+Gemini 2.5 Deep Think,"Google,Google DeepMind",2025,Hosted access (no API),API or hosted access,Industry
+GLM-4.5,"Z.ai (Zhipu AI),Tsinghua University",2025,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Qwen3-235B-A22B-Thinking (Jul 2025),Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Qwen3-235B-A22B (Jul 2025),Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Qwen3-Coder-480B-A35B,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+EXAONE 4.0 (32B),LG AI Research,2025,Open weights (non-commercial),Open weights,Industry
+Gemini Embedding,Google DeepMind,2025,API access,API or hosted access,Industry
+Kimi K2,Moonshot,2025,Open weights (restricted use),Open weights,Industry
+Grok 4 Heavy,xAI,2025,Unreleased,Unreleased,Industry
+Grok 4,xAI,2025,API access,API or hosted access,Industry
+EXAONE Path 2.0,LG AI Research,2025,Open weights (non-commercial),Open weights,Industry
+FGN,Google DeepMind,2025,Unreleased,Unreleased,Industry
+Seed-1.6-Thinking,ByteDance,2025,API access,API or hosted access,Industry
+Qwen3 Embedding,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Gemini 2.5 Pro (Jun 2025),Google DeepMind,2025,API access,API or hosted access,Industry
+DeepSeek-R1 (May 2025),DeepSeek,2025,Open weights (unrestricted),Open weights,Industry
+Claude Sonnet 4,Anthropic,2025,API access,API or hosted access,Industry
+Claude Opus 4,Anthropic,2025,API access,API or hosted access,Industry
+Veo 3,Google DeepMind,2025,API access,API or hosted access,Industry
+Imagen 4,Google,2025,API access,API or hosted access,Industry
+Seed1.5-VL,ByteDance,2025,API access,API or hosted access,Industry
+Gemini 2.5 Pro (May 2025),Google DeepMind,2025,API access,API or hosted access,Industry
+Qwen3-235B-A22B,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+gpt-image-1,OpenAI,2025,API access,API or hosted access,Industry
+Pangu Ultra,Huawei,2025,Hosted access (no API),API or hosted access,Industry
+Llama 4 Scout,Meta AI,2025,Open weights (restricted use),Open weights,Industry
+Llama 4 Maverick,Meta AI,2025,Open weights (restricted use),Open weights,Industry
+Llama 4 Behemoth (preview),Meta AI,2025,Unreleased,Unreleased,Industry
+GPT-4o (Mar 2025),OpenAI,2025,API access,API or hosted access,Industry
+Gemini 2.5 Pro (Mar 2025),Google DeepMind,2025,API access,API or hosted access,Industry
+DeepSeek-V3 (Mar 2025),DeepSeek,2025,Open weights (restricted use),Open weights,Industry
+Diffusion Renderer,"Nvidia,University of Toronto,Vector Institute,University of Illinois Urbana-Champaign (UIUC)",2025,Open weights (non-commercial),Open weights,Industry–academia collaboration
+o1-pro,OpenAI,2025,API access,API or hosted access,Industry
+EXAONE Deep 32B,LG AI Research,2025,Open weights (non-commercial),Open weights,Industry
+ERNIE-4.5-VL-424B-A47B (文心大模型4.5),Baidu,2025,Open weights (unrestricted),Open weights,Industry
+Hunyuan-TurboS,Tencent,2025,API access,API or hosted access,Industry
+QwQ-32B,Alibaba,2025,Open weights (unrestricted),Open weights,Industry
+Mistral OCR,Mistral AI,2025,API access,API or hosted access,Industry
+Mercury,Inception Labs,2025,API access,API or hosted access,Industry
+GPT-4.5,OpenAI,2025,API access,API or hosted access,Industry
+Claude 3.7 Sonnet,Anthropic,2025,API access,API or hosted access,Industry
+Grok 3,xAI,2025,API access,API or hosted access,Industry
+o3-mini,OpenAI,2025,API access,API or hosted access,Industry
+GPT-4o (Jan 2025),OpenAI,2025,API access,API or hosted access,Industry
+Computer-Using Agent (CUA),OpenAI,2025,Hosted access (no API),API or hosted access,Industry
+Kimi k1.5,Moonshot,2025,API access,API or hosted access,Industry
+Doubao-1.5-pro,ByteDance,2025,Hosted access (no API),API or hosted access,Industry
+Eagle 2,"Nvidia,Nanjing University,Tsinghua University,Hong Kong Polytechnic University,Johns Hopkins University,New York University (NYU)",2025,Open weights (non-commercial),Open weights,Industry–academia collaboration
+DeepSeek-R1,DeepSeek,2025,Open weights (unrestricted),Open weights,Industry
+INTELLECT-MATH,Prime Intellect,2025,Open weights (unrestricted),Open weights,Industry
+Stable Point Aware 3D (SPAR3D),"Stability AI,University of Illinois Urbana-Champaign (UIUC)",2025,Open weights (restricted use),Open weights,Industry–academia collaboration
+Eurus-2-7B-PRIME,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute",2025,Open weights (unrestricted),Open weights,Academia
+STORM-B/8,"University of Southern California,Georgia Institute of Technology,Stanford University,Nvidia",2024,Open weights (non-commercial),Open weights,Industry–academia collaboration
+DeepSeek-V3,DeepSeek,2024,Open weights (restricted use),Open weights,Industry
+o3,OpenAI,2024,API access,API or hosted access,Industry
+Veo 2,Google DeepMind,2024,API access,API or hosted access,Industry
+Apollo 7B,"Meta AI,Stanford University",2024,Unreleased,Unreleased,Industry–academia collaboration
+Gemini 2.0 Pro,Google DeepMind,2024,Hosted access (no API),API or hosted access,Industry
+Sora Turbo,OpenAI,2024,Hosted access (no API),API or hosted access,Industry
+EXAONE 3.5 32B,LG AI Research,2024,Open weights (non-commercial),Open weights,Industry
+Llama 3.3 70B,Meta AI,2024,Open weights (restricted use),Open weights,Industry
+o1,OpenAI,2024,API access,API or hosted access,Industry
+NVILA 15B,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University",2024,Open weights (non-commercial),Open weights,Industry–academia collaboration
+Infinity,ByteDance,2024,Open weights (unrestricted),Open weights,Industry
+Amazon Nova Pro,Amazon,2024,API access,API or hosted access,Industry
+Fugatto 1,Nvidia,2024,Unreleased,Unreleased,Industry
+GPT-4o (Nov 2024),OpenAI,2024,API access,API or hosted access,Industry
+Suno v4,Suno,2024,Hosted access (no API),API or hosted access,Industry
+Pixtral Large,Mistral AI,2024,Open weights (non-commercial),Open weights,Industry
+k0-math,Moonshot,2024,Unreleased,Unreleased,Industry
+Gemini-Exp-1114,Google DeepMind,2024,Hosted access (no API),API or hosted access,Industry
+SeedEdit,ByteDance,2024,API access,API or hosted access,Industry
+Hunyuan-Large,Tencent,2024,Open weights (restricted use),Open weights,Industry
+Doubao-pro,ByteDance,2024,API access,API or hosted access,Industry
+NVLM-X 72B,Nvidia,2024,Unreleased,Unreleased,Industry
+NVLM-H 72B,Nvidia,2024,Unreleased,Unreleased,Industry
+NVLM-D 72B,Nvidia,2024,Open weights (non-commercial),Open weights,Industry
+Yi-Lightning,01.AI,2024,API access,API or hosted access,Industry
+CHAI-1,Chai discovery,2024,Open weights (non-commercial),Open weights,Industry
+Llama-3.1-Nemotron-70B-Instruct,"Nvidia,Meta AI",2024,Open weights (restricted use),Open weights,Industry
+RDT-1B,Tsinghua University,2024,Open weights (unrestricted),Open weights,Academia
+Palmyra X 004,Writer,2024,API access,API or hosted access,Industry
+GR-2,ByteDance,2024,Unreleased,Unreleased,Industry
+Movie Gen Video,Meta AI,2024,Unreleased,Unreleased,Industry
+PixelDance,ByteDance,2024,Hosted access (no API),API or hosted access,Industry
+Llama 3.2 11B,Meta AI,2024,Open weights (restricted use),Open weights,Industry
+Telechat2-115B,China Telecom,2024,Open weights (restricted use),Open weights,Industry
+Qwen2.5-72B,Alibaba,2024,Open weights (unrestricted),Open weights,Industry
+Qwen2.5 Instruct (72B),Alibaba,2024,Open weights (restricted use),Open weights,Industry
+Oryx 34B,"Tsinghua University,Tencent,Nanyang Technological University",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Qwen2.5-32B,Alibaba,2024,Open weights (unrestricted),Open weights,Industry
+o1-preview,OpenAI,2024,API access,API or hosted access,Industry
+o1-mini,OpenAI,2024,API access,API or hosted access,Industry
+DeepSeek-V2.5,DeepSeek,2024,Open weights (restricted use),Open weights,Industry
+Hunyuan Turbo,Tencent,2024,API access,API or hosted access,Industry
+Harrison.rad.1,Harrison.ai,2024,Unreleased,Unreleased,Industry
+AlphaProteo,Google DeepMind,2024,Unreleased,Unreleased,Industry
+Hairuo,Inspur,2024,Hosted access (no API),API or hosted access,Industry
+GLM-4-Plus,Z.ai (Zhipu AI),2024,API access,API or hosted access,Industry
+Jamba 1.5-Large,AI21 Labs,2024,Open weights (restricted use),Open weights,Industry
+Grok-2,xAI,2024,API access,API or hosted access,Industry
+Table Tennis Agent,Google DeepMind,2024,Unreleased,Unreleased,Industry
+LLaVA-OV-72B,"ByteDance,Nanyang Technological University,Chinese University of Hong Kong (CUHK),Hong Kong University of Science and Technology (HKUST)",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+GPT-4o (Aug 2024),OpenAI,2024,API access,API or hosted access,Industry
+AFM-server,Apple,2024,Hosted access (no API),API or hosted access,Industry
+AFM-on-device,Apple,2024,Hosted access (no API),API or hosted access,Industry
+Mistral Large 2,Mistral AI,2024,Open weights (non-commercial),Open weights,Industry
+Llama 3.1-405B,Meta AI,2024,Open weights (restricted use),Open weights,Industry
+GPT-4o mini,OpenAI,2024,API access,API or hosted access,Industry
+Mathstral,Mistral AI,2024,Open weights (unrestricted),Open weights,Industry
+DeepL LLM,DeepL,2024,Hosted access (no API),API or hosted access,Industry
+SenseChat 5.5,SenseTime,2024,Hosted access (no API),API or hosted access,Industry
+Ernie 4.0 Turbo,Baidu,2024,API access,API or hosted access,Industry
+ESM3 (98B),"EvolutionaryScale,University of California (UC) Berkeley",2024,Unreleased,Unreleased,Industry–academia collaboration
+Cambrian-1-34B,New York University (NYU),2024,Open weights (unrestricted),Open weights,Academia
+Claude 3.5 Sonnet,Anthropic,2024,API access,API or hosted access,Industry
+DeepSeek-Coder-V2 236B,DeepSeek,2024,Open weights (restricted use),Open weights,Industry
+Nemotron-4 340B,Nvidia,2024,Open weights (unrestricted),Open weights,Industry
+OpenVLA,"Stanford University,University of California (UC) Berkeley,Toyota Research Institute,Google DeepMind,Massachusetts Institute of Technology (MIT),Physical Intelligence",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Qwen2-72B,Alibaba,2024,Open weights (unrestricted),Open weights,Industry
+ALLaM adapted 70B,Saudi Data and Artificial Intelligence Authority,2024,Unreleased,Unreleased,"Other (government, research collectives)"
+Octo-Base,"University of California (UC) Berkeley,Stanford University,Carnegie Mellon University (CMU),DeepMind",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+GLM-4 (0520),Z.ai (Zhipu AI),2024,API access,API or hosted access,Industry
+Yi-Large,01.AI,2024,API access,API or hosted access,Industry
+GPT-4o,OpenAI,2024,API access,API or hosted access,Industry
+AlphaFold 3,"Google DeepMind,Isomorphic Labs",2024,Open weights (non-commercial),Open weights,Industry
+VILA1.5-13B,"Nvidia,Massachusetts Institute of Technology (MIT)",2024,Open weights (non-commercial),Open weights,Industry–academia collaboration
+GenCast,Google DeepMind,2024,Open weights (non-commercial),Open weights,Industry
+Llama 3-70B,Meta AI,2024,Open weights (restricted use),Open weights,Industry
+Reka Core,Reka AI,2024,API access,API or hosted access,Industry
+GPT-4 Turbo (Apr 2024),OpenAI,2024,API access,API or hosted access,Industry
+ReALM,Apple,2024,Unreleased,Unreleased,Industry
+DBRX,Databricks,2024,Open weights (restricted use),Open weights,Industry
+MM1-30B,Apple,2024,Unreleased,Unreleased,Industry
+ManiGaussian,"Tsinghua University,Nanyang Technological University,Carnegie Mellon University (CMU)",2024,Open weights (unrestricted),Open weights,Academia
+Inflection-2.5,Inflection AI,2024,Hosted access (no API),API or hosted access,Industry
+Claude 3 Sonnet,Anthropic,2024,API access,API or hosted access,Industry
+Claude 3 Opus,Anthropic,2024,API access,API or hosted access,Industry
+Aramco Metabrain AI,Saudi Aramco,2024,Unreleased,Unreleased,"Other (government, research collectives)"
+Mistral Large,Mistral AI,2024,API access,API or hosted access,Industry
+MegaScale (Production),"ByteDance,Peking University",2024,Unreleased,Unreleased,Industry–academia collaboration
+Stable Diffusion 3,Stability AI,2024,API access,API or hosted access,Industry
+Sora,OpenAI,2024,Hosted access (no API),API or hosted access,Industry
+Gemini 1.5 Pro,Google DeepMind,2024,API access,API or hosted access,Industry
+Aya,"Cohere Labs (formerly Cohere for AI),Brown University,Cohere,Carnegie Mellon University (CMU),Massachusetts Institute of Technology (MIT)",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Qwen1.5-72B,Alibaba,2024,Open weights (restricted use),Open weights,Industry
+Qwen-VL-Max,Alibaba,2024,API access,API or hosted access,Industry
+AlphaGeometry,"Google DeepMind,New York University (NYU)",2024,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Palmyra X 003,Writer,2024,API access,API or hosted access,Industry
+Kimi Explorer,Moonshot,2024,Hosted access (no API),API or hosted access,Industry
+CoRe,Tsinghua University,2023,Unreleased,Unreleased,Academia
+GQA-8-XXL,Google Research,2023,Unreleased,Unreleased,Industry
+nekomata-14b,rinna,2023,Open weights (restricted use),Open weights,Industry
+Gemini Nano-2,Google DeepMind,2023,Unreleased,Unreleased,Industry
+Gemini Nano-1,Google DeepMind,2023,API access,API or hosted access,Industry
+FunSearch,Google DeepMind,2023,Open weights (unrestricted),Open weights,Industry
+CogAgent,"Tsinghua University,Z.ai (Zhipu AI)",2023,Open weights (restricted use),Open weights,Industry–academia collaboration
+VILA-13B,"Nvidia,Massachusetts Institute of Technology (MIT)",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+W.A.L.T,"Stanford University,Google Research,Georgia Institute of Technology",2023,Unreleased,Unreleased,Industry–academia collaboration
+Mixtral 8x7B,Mistral AI,2023,Open weights (unrestricted),Open weights,Industry
+SeamlessM4T,"Facebook,INRIA,University of California (UC) Berkeley",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Llama Guard,Meta AI,2023,Open weights (restricted use),Open weights,Industry
+Gemini 1.0 Ultra,Google DeepMind,2023,API access,API or hosted access,Industry
+Gemini 1.0 Pro,Google DeepMind,2023,API access,API or hosted access,Industry
+Mamba-24M (SC09),"Carnegie Mellon University (CMU),Princeton University",2023,Unreleased,Unreleased,Academia
+Qwen-72B,Alibaba,2023,Open weights (restricted use),Open weights,Industry
+PPLX-70B-Online,Perplexity,2023,API access,API or hosted access,Industry
+GNoME for crystal discovery,Google DeepMind,2023,Unreleased,Unreleased,Industry
+Inflection-2,Inflection AI,2023,Hosted access (no API),API or hosted access,Industry
+Claude 2.1,Anthropic,2023,API access,API or hosted access,Industry
+AndesGPT,Oppo Mobile Telecommunications,2023,Hosted access (no API),API or hosted access,Industry
+Nemotron-3-8B,Nvidia,2023,Open weights (restricted use),Open weights,Industry
+Qwen-Audio-Chat,Alibaba,2023,Open weights (restricted use),Open weights,Industry
+GraphCast,Google DeepMind,2023,Open weights (non-commercial),Open weights,Industry
+Volcano 13B,"Korea University,Korea Advanced Institute of Science and Technology (KAIST),LG",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+SPHINX (Llama 2 13B),"Shanghai AI Lab,Chinese University of Hong Kong (CUHK),ShanghaiTech University",2023,Open weights (restricted use),Open weights,Academia
+RoFormer,Zhuiyi Technology,2023,Unreleased,Unreleased,Industry
+MultiBand Diffusion,"Meta AI,Hebrew University of Jerusalem,LORIA",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+OmniVec,TensorTour,2023,Unreleased,Unreleased,Industry
+mPLUG-Owl2,Alibaba,2023,Open weights (unrestricted),Open weights,Industry
+GPT-4 Turbo (Nov 2023),OpenAI,2023,API access,API or hosted access,Industry
+CogVLM-17B,"Tsinghua University,Z.ai (Zhipu AI),Beihang University",2023,Open weights (restricted use),Open weights,Industry–academia collaboration
+LLaVA 1.5,"University of Wisconsin Madison,Microsoft Research",2023,Open weights (restricted use),Open weights,Industry–academia collaboration
+Grok-1,xAI,2023,Open weights (unrestricted),Open weights,Industry
+RT-Trajectory,"Google DeepMind,University of California San Diego,Stanford University",2023,Unreleased,Unreleased,Industry–academia collaboration
+BLUUMI,"University of Turku,Hugging Face",2023,Open weights (restricted use),Open weights,Industry–academia collaboration
+Yi-34B,01.AI,2023,Open weights (restricted use),Open weights,Industry
+Cohere Embed,Cohere,2023,API access,API or hosted access,Industry
+Skywork-13B,Kunlun Inc.,2023,Open weights (restricted use),Open weights,Industry
+ChatGLM3-6B,Z.ai (Zhipu AI),2023,Open weights (restricted use),Open weights,Industry
+DiT-XL/2 + CADS,"ETH Zurich,Disney Research",2023,Unreleased,Unreleased,Industry–academia collaboration
+CODEFUSION (Python),"Microsoft,Microsoft Research",2023,Unreleased,Unreleased,Industry
+DALL·E 3,OpenAI,2023,API access,API or hosted access,Industry
+PaLI-3,"Google DeepMind,Google Research,Google Cloud",2023,Unreleased,Unreleased,Industry
+ERNIE 4.0,Baidu,2023,API access,API or hosted access,Industry
+RT-2-X,Google DeepMind,2023,Unreleased,Unreleased,Industry
+Ferret (13B),"Columbia University,Apple",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+RoseTTAFold All-Atom (RFAA),"University of Washington,Seoul National University,University of Sheffield",2023,Open weights (unrestricted),Open weights,Academia
+FinGPT-13B,"University of California Los Angeles (UCLA),Columbia University,New York University (NYU)",2023,Open weights (unrestricted),Open weights,Academia
+CTM (CIFAR-10),"Stanford University,Sony",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+GPT-3.5 Turbo Instruct,OpenAI,2023,API access,API or hosted access,Industry
+Amazon Titan,Amazon,2023,API access,API or hosted access,Industry
+Show-1,National University of Singapore,2023,Open weights (non-commercial),Open weights,Academia
+GPT-4V,OpenAI,2023,API access,API or hosted access,Industry
+AlphaMissense,Google DeepMind,2023,Unreleased,Unreleased,Industry
+Robot Parkour,"Shanghai Qi Zhi institute,Stanford University,Carnegie Mellon University (CMU),Tsinghua University",2023,Unreleased,Unreleased,Academia
+Falcon-180B,Technology Innovation Institute,2023,Open weights (restricted use),Open weights,"Other (government, research collectives)"
+Swift,Intel Labs,2023,Unreleased,Unreleased,Industry
+Jais,"Cerebras Systems,Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),Inception G42",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+PeptideBERT,Carnegie Mellon University (CMU),2023,Open weights (unrestricted),Open weights,Academia
+Qwen-VL,Alibaba,2023,Open weights (restricted use),Open weights,Industry
+GGNN,"Westlake University,Tsinghua University,Toyota Technological Institute at Chicago",2023,Unreleased,Unreleased,Academia
+RT-2,Google DeepMind,2023,Unreleased,Unreleased,Industry
+AudioLM,Google Research,2023,Unreleased,Unreleased,Industry
+Llama 2-70B,Meta AI,2023,Open weights (restricted use),Open weights,Industry
+Llama 2-7B,Meta AI,2023,Open weights (restricted use),Open weights,Industry
+GPT3-2.7B (FlashAttention-2),"Stanford University,Princeton University",2023,Unreleased,Unreleased,Academia
+Claude 2,Anthropic,2023,API access,API or hosted access,Industry
+xTrimoPGLM -100B,"Tsinghua University,BioMap Research",2023,Unreleased,Unreleased,Industry–academia collaboration
+InternLM,"Shanghai AI Lab,SenseTime",2023,Unreleased,Unreleased,Industry–academia collaboration
+Pangu-Weather,Huawei,2023,Open weights (non-commercial),Open weights,Industry
+Stable Diffusion XL (SDXL),Stability AI,2023,Open weights (non-commercial),Open weights,Industry
+HyenaDNA,"Stanford University,Harvard University,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms),University of Montreal / Université de Montréal",2023,Open weights (restricted use),Open weights,Academia
+ERNIE 3.5,Baidu,2023,Hosted access (no API),API or hosted access,Industry
+GPT-4 (Jun 2023),OpenAI,2023,API access,API or hosted access,Industry
+GPT-3.5 Turbo,OpenAI,2023,API access,API or hosted access,Industry
+MusicGen,Meta AI,2023,Open weights (non-commercial),Open weights,Industry
+LTM-1,Magic,2023,Unreleased,Unreleased,Industry
+PaLI-X,Google Research,2023,Unreleased,Unreleased,Industry
+DPO on Pythia-2.8B,"Stanford University,CZ Biohub Network",2023,Unreleased,Unreleased,Academia
+Goat-7B,National University of Singapore,2023,Open weights (non-commercial),Open weights,Academia
+CodeT5+,Salesforce,2023,Open weights (unrestricted),Open weights,Industry
+ONE-PEACE,"Alibaba,Huazhong University of Science and Technology",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+CoEdiT-xxl,"University of Minnesota,Grammarly",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+Med-PaLM 2,"Google Research,DeepMind",2023,Unreleased,Unreleased,Industry
+InstructBLIP,"Salesforce Research,Hong Kong University of Science and Technology (HKUST),Nanyang Technological University",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+PaLM 2,Google,2023,API access,API or hosted access,Industry
+StarCoder,"Hugging Face,ServiceNow,Northeastern University,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms),Carnegie Mellon University (CMU),Johns Hopkins University,Leipzig University,ScaDS.AI,Queen Mary University of London,Roblox,Sea AI Lab,Technion - Israel Institute of Technology,Monash University,CSIRO,Data61,McGill University,Saama,University of British Columbia (UBC),Massachusetts Institute of Technology (MIT),Technical University of Munich,IBM,University of Vermont,UnfoldML,SAP,University of Notre Dame,Columbia University,New York University (NYU),University of Allahabad,Discover Dollar,Toloka,Telefonica,Stanford University,Weizmann Institute of Science,Alan Turing Institute,Wellesley College,EleutherAI,Forschungszentrum Julich",2023,Open weights (restricted use),Open weights,Industry–academia collaboration
+ImageBind,Meta AI,2023,Open weights (non-commercial),Open weights,Industry
+Agile Soccer Robot,Google DeepMind,2023,Unreleased,Unreleased,Industry
+LLaVA,"University of Wisconsin Madison,Microsoft Research,Columbia University",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+DINOv2,"Facebook AI Research,INRIA",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Incoder-6.7B,"Facebook AI Research,University of Washington,University of California (UC) Berkeley,Carnegie Mellon University (CMU),Toyota Technological Institute at Chicago",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+Segment Anything Model,Meta AI,2023,Open weights (unrestricted),Open weights,Industry
+BloombergGPT,"Bloomberg,Johns Hopkins University",2023,Unreleased,Unreleased,Industry–academia collaboration
+VideoMAE V2,"Nanjing University,Shenzhen Institute of Advanced Technology,Shanghai AI Lab",2023,Open weights (unrestricted),Open weights,Academia
+SigLIP 400M,Google DeepMind,2023,Open weights (unrestricted),Open weights,Industry
+Firefly,Adobe,2023,Hosted access (no API),API or hosted access,Industry
+PanGu-Σ,Huawei Noah's Ark Lab,2023,Unreleased,Unreleased,Industry
+Gen-2,Runway,2023,API access,API or hosted access,Industry
+LEP-AD,"King Abdullah University of Science and Technology (KAUST),Karolinska Institute",2023,Unreleased,Unreleased,Academia
+GPT-4 (Mar 2023),OpenAI,2023,API access,API or hosted access,Industry
+Falcon-40B,Technology Innovation Institute,2023,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+Claude,Anthropic,2023,API access,API or hosted access,Industry
+PaLM-E,"Google,TU Berlin",2023,Unreleased,Unreleased,Industry–academia collaboration
+AudioGen,"Meta AI,Hebrew University of Jerusalem",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+DiT-XL/2,"New York University (NYU),University of California (UC) Berkeley",2023,Open weights (non-commercial),Open weights,Academia
+LLaMA-65B,Meta AI,2023,Open weights (non-commercial),Open weights,Industry
+BASIC-L + Lion,"Google,University of California Los Angeles (UCLA)",2023,Unreleased,Unreleased,Industry–academia collaboration
+ViT-22B,Google,2023,Unreleased,Unreleased,Industry
+ProteinDT,"University of California (UC) Berkeley,California Institute of Technology,University of Toronto,University of Wisconsin Madison,Texas A&M,Nvidia,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms)",2023,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Gen-1,Runway,2023,API access,API or hosted access,Industry
+BLIP-2 (Q-Former),Salesforce Research,2023,Open weights (unrestricted),Open weights,Industry
+DDPM-IP (CelebA),Utrecht University,2023,Open weights (unrestricted),Open weights,Academia
+MusicLM,Google,2023,Unreleased,Unreleased,Industry
+Ankh_large,"Technical University of Munich,Columbia University",2023,Open weights (non-commercial),Open weights,Academia
+Nucleotide Transformer,"Nvidia,Technical University of Munich,InstaDeep",2023,Open weights (non-commercial),Open weights,Industry–academia collaboration
+DreamerV3,"DeepMind,University of Toronto",2023,Unreleased,Unreleased,Industry–academia collaboration
+VALL-E,Microsoft,2023,Unreleased,Unreleased,Industry
+Hybrid H3-2.7B,"Stanford University,University at Buffalo",2022,Open weights (unrestricted),Open weights,Academia
+CaLM,University of Oxford,2022,Unreleased,Unreleased,Academia
+RT-1,Google,2022,Open weights (unrestricted),Open weights,Industry
+TranceptEve,"University of Oxford,Harvard Medical School",2022,Unreleased,Unreleased,Academia
+Vega v2,"Wuhan University,JD Explore Academy,Shanghai AI Lab,Nanyang Technological University,Washington University in St Louis,Chongqing University of Posts and Telecommunications,University of Sydney",2022,Unreleased,Unreleased,Academia
+DeepNash,DeepMind,2022,Unreleased,Unreleased,Industry
+DiT-XL/2 + Discriminator Guidance,"Korea Advanced Institute of Science and Technology (KAIST),NAVER",2022,Unreleased,Unreleased,Industry–academia collaboration
+Discriminator Guidance,"Korea Advanced Institute of Science and Technology (KAIST),NAVER",2022,Open weights (non-commercial),Open weights,Industry–academia collaboration
+ALM 1.0,Beijing Academy of Artificial Intelligence / BAAI,2022,Hosted access (no API),API or hosted access,Academia
+CICERO,Meta AI,2022,Open weights (non-commercial),Open weights,Industry
+AR-LDM,"Alibaba,University of Waterloo,Vector Institute",2022,Unreleased,Unreleased,Industry–academia collaboration
+Fusion in Encoder,Samsung,2022,Unreleased,Unreleased,Industry
+Galactica,Meta AI,2022,Open weights (non-commercial),Open weights,Industry
+EVA-01,"Beijing Academy of Artificial Intelligence / BAAI,Huazhong University of Science and Technology,Zhejiang University (ZJU),Beijing Institute of Technology",2022,Open weights (unrestricted),Open weights,Academia
+AltCLIP_M9,Beijing Academy of Artificial Intelligence / BAAI,2022,Open weights (unrestricted),Open weights,Academia
+InternImage,"Shanghai AI Lab,Tsinghua University,Nanjing University,SenseTime,Chinese University of Hong Kong (CUHK)",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+mT0-13B,"Hugging Face,BigScience",2022,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+Mogrifier RLSTM (WT2),DeepMind,2022,Unreleased,Unreleased,Industry
+eDiff-I,Nvidia,2022,Unreleased,Unreleased,Industry
+EnCodec,Meta AI,2022,Open weights (non-commercial),Open weights,Industry
+U-PaLM (540B),Google,2022,Unreleased,Unreleased,Industry
+LMSI-Palm,"Google,University of Illinois Urbana-Champaign (UIUC)",2022,Unreleased,Unreleased,Industry–academia collaboration
+Flan-PaLM 540B,Google,2022,Unreleased,Unreleased,Industry
+GenSLM,"University of Chicago,Nvidia,Harvard University,Cerebras Systems,Technical University of Munich,California Institute of Technology",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Diplodocus,"Meta AI,Massachusetts Institute of Technology (MIT)",2022,Open weights (non-commercial),Open weights,Industry–academia collaboration
+Phenaki,"University College London (UCL),University of Michigan,Google Brain",2022,Unreleased,Unreleased,Industry–academia collaboration
+AlphaTensor,DeepMind,2022,Unreleased,Unreleased,Industry
+DiffDock,Massachusetts Institute of Technology (MIT),2022,Open weights (unrestricted),Open weights,Academia
+Make-A-Video,Meta AI,2022,Hosted access (no API),API or hosted access,Industry
+Whisper,OpenAI,2022,Open weights (unrestricted),Open weights,Industry
+SauTech,"Saudi Data and Artificial Intelligence Authority,Saudi Company for Artificial Intelligence",2022,Hosted access (no API),API or hosted access,"Other (government, research collectives)"
+PaLI,Google,2022,Unreleased,Unreleased,Industry
+BEIT-3,Microsoft,2022,Open weights (unrestricted),Open weights,Industry
+BlenderBot 3,"McGill University,Meta AI,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms)",2022,Open weights (non-commercial),Open weights,Industry–academia collaboration
+GLM-130B,Tsinghua University,2022,Open weights (non-commercial),Open weights,Academia
+AlexaTM 20B,Amazon,2022,API access,API or hosted access,Industry
+OmegaPLM,"Massachusetts Institute of Technology (MIT),Westlake University",2022,Unreleased,Unreleased,Academia
+ESM2-15B,"Meta AI,New York University (NYU),Stanford University,Massachusetts Institute of Technology (MIT)",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+BLOOM-176B,"Hugging Face,BigScience",2022,Open weights (restricted use),Open weights,"Other (government, research collectives)"
+NLLB,Meta AI,2022,Open weights (unrestricted),Open weights,Industry
+CodeT5-large,Salesforce,2022,Open weights (unrestricted),Open weights,Industry
+Minerva (540B),Google,2022,Unreleased,Unreleased,Industry
+ProGen2-xlarge,"Salesforce Research,Columbia University,Johns Hopkins University",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Parti,Google Research,2022,Unreleased,Unreleased,Industry
+CoCa,Google Research,2022,Unreleased,Unreleased,Industry
+MetaLM,Microsoft Research,2022,Unreleased,Unreleased,Industry
+DITTO,"Tsinghua University,Apple,Westlake University,Chinese University of Hong Kong (CUHK)",2022,Unreleased,Unreleased,Industry–academia collaboration
+Diffusion-GAN,"UT Austin,Microsoft",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+CogVideo,"Tsinghua University,Beijing Academy of Artificial Intelligence / BAAI",2022,Open weights (unrestricted),Open weights,Academia
+Tranception,"University of Oxford,Harvard Medical School,Cohere",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+GPT-2 Medium (FlashAttention),"Stanford University,University at Buffalo",2022,Open weights (unrestricted),Open weights,Academia
+Imagen,Google Brain,2022,API access,API or hosted access,Industry
+SimCSE,"Princeton University,Tsinghua University",2022,Open weights (unrestricted),Open weights,Academia
+Gato,DeepMind,2022,Unreleased,Unreleased,Industry
+UL2,"Google Research,Google Brain",2022,Open weights (unrestricted),Open weights,Industry
+DeBERTaV3large + KEAR,Microsoft,2022,Unreleased,Unreleased,Industry
+OPT-175B,Meta AI,2022,Open weights (non-commercial),Open weights,Industry
+Flamingo,DeepMind,2022,Unreleased,Unreleased,Industry
+XMC-GAN,Google Research,2022,Unreleased,Unreleased,Industry
+Sparse all-MLP,Meta AI,2022,Unreleased,Unreleased,Industry
+Stable Diffusion (LDM-KL-8-G),"Runway,Ludwig Maximilian University of Munich,Heidelberg University",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+BERT-RBP,Waseda University,2022,Open weights (non-commercial),Open weights,Academia
+DALL·E 2,OpenAI,2022,API access,API or hosted access,Industry
+PaLM (540B),Google Research,2022,Unreleased,Unreleased,Industry
+Chinchilla,DeepMind,2022,Unreleased,Unreleased,Industry
+Make-A-Scene,Meta AI,2022,Unreleased,Unreleased,Industry
+"Segatron-XL large, M=384 + HCP","Microsoft Research,University of Waterloo",2022,Unreleased,Unreleased,Industry–academia collaboration
+GPT-3.5 (davinci-002),OpenAI,2022,API access,API or hosted access,Industry
+ViT-G (model soup),"University of Washington,Columbia University,Google,Meta AI,Tel Aviv University",2022,Open weights (non-commercial),Open weights,Industry–academia collaboration
+MegaSyn,Collaborations Pharmaceuticals,2022,Hosted access (no API),API or hosted access,Industry
+Statement Curriculum Learning,OpenAI,2022,API access,API or hosted access,Industry
+DeepNet,Microsoft Research,2022,Unreleased,Unreleased,Industry
+PolyCoder,Carnegie Mellon University (CMU),2022,Open weights (unrestricted),Open weights,Academia
+FourCastNet,"Nvidia,NERSC, Lawrence Berkeley National Laboratory,University of Michigan,Rice University,California Institute of Technology,Purdue University",2022,Unreleased,Unreleased,Industry–academia collaboration
+ST-MoE,"Google,Google Brain,Google Research",2022,Unreleased,Unreleased,Industry
+Midjourney V1,Midjourney,2022,Hosted access (no API),API or hosted access,Industry
+ProteinBERT,"Hebrew University of Jerusalem,Ben-Gurion University of the Negev,Deep Trading",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+LaMDA,Google,2022,Unreleased,Unreleased,Industry
+GPT-NeoX-20B,EleutherAI,2022,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+MaskGIT (ImageNet),Google Research,2022,,Not recorded,Industry
+RETRO-7B,DeepMind,2022,Unreleased,Unreleased,Industry
+AlphaCode,DeepMind,2022,Unreleased,Unreleased,Industry
+InstructGPT 175B,OpenAI,2022,API access,API or hosted access,Industry
+InstructGPT 6B,OpenAI,2022,API access,API or hosted access,Industry
+InstructGPT 1.3B,OpenAI,2022,API access,API or hosted access,Industry
+OntoProtein,Zhejiang University (ZJU),2022,Open weights (unrestricted),Open weights,Academia
+AbLang (heavy sequences),University of Oxford,2022,Open weights (unrestricted),Open weights,Academia
+data2vec (vision),Meta AI,2022,Open weights (unrestricted),Open weights,Industry
+data2vec (speech),Meta AI,2022,Open weights (unrestricted),Open weights,Industry
+data2vec (language),Meta AI,2022,Open weights (unrestricted),Open weights,Industry
+Detic,"Meta AI,University of Texas at Austin",2022,Open weights (unrestricted),Open weights,Industry–academia collaboration
+ERNIE-ViLG,Baidu,2021,Unreleased,Unreleased,Industry
+ERNIE 3.0 Titan,"Baidu,Peng Cheng Laboratory",2021,Hosted access (no API),API or hosted access,Industry–academia collaboration
+XGLM-7.5B,"Meta AI,Facebook AI Research",2021,Open weights (non-commercial),Open weights,Industry
+LDM-1.45B,"Heidelberg University,Runway",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Contriever,"Meta AI,University College London (UCL),PSL University,Université Grenoble Alpes",2021,Open weights (non-commercial),Open weights,Industry–academia collaboration
+LongT5,Google Research,2021,Open weights (unrestricted),Open weights,Industry
+GLaM,Google,2021,Unreleased,Unreleased,Industry
+Gopher (280B),DeepMind,2021,Unreleased,Unreleased,Industry
+Student of Games,DeepMind,2021,Unreleased,Unreleased,Industry
+T-NLRv5 XXL,Microsoft,2021,Unreleased,Unreleased,Industry
+NÜWA,"Microsoft Research,Peking University",2021,Unreleased,Unreleased,Industry–academia collaboration
+Florence,Microsoft,2021,Unreleased,Unreleased,Industry
+BASIC-L,Google,2021,Unreleased,Unreleased,Industry
+Swin Transformer V2 (SwinV2-G),Microsoft Research Asia,2021,Open weights (unrestricted),Open weights,Industry
+AliceMind-MMU,Alibaba,2021,Unreleased,Unreleased,Industry
+ViT-G/14 (LiT),Google Research,2021,Unreleased,Unreleased,Industry
+Masked Autoencoders ViT-H,Facebook AI Research,2021,Open weights (non-commercial),Open weights,Industry
+Projected GAN,Heidelberg University,2021,Open weights (unrestricted),Open weights,Academia
+CodeT5-base,"Salesforce,Nanyang Technological University",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+S4,Stanford University,2021,Open weights (unrestricted),Open weights,Academia
+EfficientZero,"Tsinghua University,University of California (UC) Berkeley,Shanghai Qi Zhi institute",2021,Unreleased,Unreleased,Academia
+Eve,"Harvard Medical School,University of Oxford",2021,Unreleased,Unreleased,Academia
+base LM+GNN+kNN,"Shannon.AI,Nanjing University,Nanyang Technological University,Zhejiang University (ZJU)",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Yuan 1.0,Inspur,2021,API access,API or hosted access,Industry
+Megatron-Turing NLG 530B,"Microsoft,Nvidia",2021,Unreleased,Unreleased,Industry
+AlphaFold-Multimer,"Google DeepMind,DeepMind",2021,Open weights (unrestricted),Open weights,Industry
+Turing ULRv5,Microsoft,2021,Hosted access (no API),API or hosted access,Industry
+TrOCR,"Beihang University,Microsoft Research Asia",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+PLATO-XL,Baidu,2021,Open weights (unrestricted),Open weights,Industry
+HyperCLOVA 204B,NAVER,2021,Hosted access (no API),API or hosted access,Industry
+PermuteFormer,Peking University,2021,Unreleased,Unreleased,Academia
+MEB,Microsoft,2021,Hosted access (no API),API or hosted access,Industry
+FLAN 137B,Google Research,2021,Unreleased,Unreleased,Industry
+XLMR-XXL,Facebook AI Research,2021,Open weights (unrestricted),Open weights,Industry
+DNABERT,Northeastern University,2021,Open weights (unrestricted),Open weights,Academia
+Zidong Taichu,"Chinese Academy of Sciences,Wuhan AI Computing Center",2021,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+Jurassic-1-Jumbo,AI21 Labs,2021,API access,API or hosted access,Industry
+W2v-BERT,"Google Brain,Massachusetts Institute of Technology (MIT)",2021,Unreleased,Unreleased,Industry–academia collaboration
+YOLOX-X,Megvii Inc,2021,Open weights (unrestricted),Open weights,Industry
+6-Act Tether,"Facebook AI Research,Georgia Institute of Technology",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+SEER,"Facebook AI Research,INRIA",2021,Open weights (non-commercial),Open weights,Industry–academia collaboration
+HuBERT,Facebook AI Research,2021,Open weights (unrestricted),Open weights,Industry
+GOAT,DeepMind,2021,Unreleased,Unreleased,Industry
+Codex,OpenAI,2021,API access,API or hosted access,Industry
+ERNIE 3.0,Baidu,2021,Open weights (unrestricted),Open weights,Industry
+Adaptive Input Transformer + RD,"Microsoft Research Asia,Soochow University",2021,Unreleased,Unreleased,Industry–academia collaboration
+Fold2Seq,"IBM,Texas A&M",2021,Unreleased,Unreleased,Industry–academia collaboration
+EfficientNetV2-XL,"Google,Google Brain",2021,Open weights (unrestricted),Open weights,Industry
+StyleGAN3-T,"Nvidia,Aalto University",2021,Open weights (non-commercial),Open weights,Industry–academia collaboration
+StyleGAN3-R,"Nvidia,Aalto University",2021,Open weights (non-commercial),Open weights,Industry–academia collaboration
+Denoising Diffusion Probabilistic Models (LSUN Bedroom),University of California (UC) Berkeley,2021,Open weights (unrestricted),Open weights,Academia
+ALIGN,Google Research,2021,Unreleased,Unreleased,Industry
+DeBERTa,Microsoft,2021,Open weights (unrestricted),Open weights,Industry
+EMDR,"Mila - Quebec AI (originally Montreal Institute for Learning Algorithms),McGill University,DeepMind",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+CoAtNet,"Google,Google Research,Google Brain",2021,Unreleased,Unreleased,Industry
+ViT-G/14,"Google Brain,Google Research",2021,Unreleased,Unreleased,Industry
+ByT5-XXL,"Google,Google Research",2021,Open weights (unrestricted),Open weights,Industry
+Transformer local-attention (NesT-B),"Google Cloud,Google Research",2021,Open weights (unrestricted),Open weights,Industry
+CogView,"Tsinghua University,Alibaba DAMO Academy",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+MedBERT,"Peng Cheng Laboratory,University of Texas at Houston",2021,Unreleased,Unreleased,Academia
+ADM,OpenAI,2021,Open weights (non-commercial),Open weights,Industry
+ProtT5-XL-U50,"Technical University of Munich,Med AI Technology,Nvidia,Oak Ridge National Laboratory,Google,Seoul National University",2021,Open weights (non-commercial),Open weights,Industry–academia collaboration
+ProtBERT-BFD,"Technical University of Munich,Nvidia,Seoul National University,Google,Oak Ridge National Laboratory,Med AI Technology",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+PLUG,Alibaba,2021,Hosted access (no API),API or hosted access,Industry
+Unicorn,Allen Institute for AI,2021,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+M6-T,Alibaba,2021,Unreleased,Unreleased,Industry
+Generative BST,Facebook AI Research,2021,Open weights (unrestricted),Open weights,Industry
+Meta Pseudo Labels,"Google Brain,Google AI",2021,Unreleased,Unreleased,Industry
+SRU++ Large,ASAPP,2021,Open weights (unrestricted),Open weights,Industry
+Rational DQN Average,TU Darmstadt,2021,Unreleased,Unreleased,Academia
+MSA Transformer,"Facebook AI Research,University of California (UC) Berkeley,New York University (NYU)",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+top-down frozen classifier,"University of Edinburgh,Toshiba Cambridge Research Laboratory",2021,Unreleased,Unreleased,Industry–academia collaboration
+DLWP,"University of Washington,Microsoft Research",2021,Unreleased,Unreleased,Industry–academia collaboration
+DeiT-B,"Meta AI,Sorbonne University",2021,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Switch,Google,2021,Open weights (unrestricted),Open weights,Industry
+BigSSL,"Google,Apple",2021,Unreleased,Unreleased,Industry
+DALL-E,OpenAI,2021,API access,API or hosted access,Industry
+CLIP (ViT L/14@336px),OpenAI,2021,Open weights (unrestricted),Open weights,Industry
+CLIP (ResNet-50),OpenAI,2021,Open weights (unrestricted),Open weights,Industry
+ERNIE-Doc (247M),Baidu,2020,Open weights (unrestricted),Open weights,Industry
+CT-MoS (WT2),"Google,National Tsing Hua University",2020,Unreleased,Unreleased,Industry–academia collaboration
+DensePhrases,"Korea University,Princeton University",2020,Open weights (unrestricted),Open weights,Academia
+VQGAN + CLIP,Heidelberg University,2020,Open weights (unrestricted),Open weights,Academia
+ESM1b,"Facebook AI Research,New York University (NYU)",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+CPM-Large,"Tsinghua University,Beijing Academy of Artificial Intelligence / BAAI",2020,Open weights (unrestricted),Open weights,Academia
+AlphaFold 2,DeepMind,2020,Open weights (unrestricted),Open weights,Industry
+KEPLER,"Tsinghua University,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms),HEC,CIFAR AI Research,Princeton University,University of Montreal / Université de Montréal",2020,Unreleased,Unreleased,"Other (government, research collectives)"
+wave2vec 2.0 LARGE,Facebook,2020,Open weights (unrestricted),Open weights,Industry
+ViT-Huge/14,"Google Brain,Google Research",2020,Open weights (unrestricted),Open weights,Industry
+ViT-Base/32,Google Brain,2020,Open weights (unrestricted),Open weights,Industry
+German ELECTRA Large,"deepset,Bayerische Staatsbibliothek Muenchen",2020,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+mT5-XXL,"Google,Google Research",2020,Open weights (unrestricted),Open weights,Industry
+Conformer + Wav2vec 2.0 + Noisy Student,"Google,Google Research,Google Brain",2020,Unreleased,Unreleased,Industry
+LUKE,"University of Washington,National Institute of Informatics",2020,Open weights (unrestricted),Open weights,Academia
+ProBERTa,"University of Illinois Urbana-Champaign (UIUC),Reed College",2020,Open weights (non-commercial),Open weights,Academia
+ERNIE-GEN (large),Baidu,2020,Open weights (non-commercial),Open weights,Industry
+DeLighT,"University of Washington,Allen Institute for AI,Facebook AI Research",2020,Unreleased,Unreleased,Industry–academia collaboration
+EfficientDet,Google Brain,2020,Open weights (unrestricted),Open weights,Industry
+Hopfield Networks (2020),"Johannes Kepler University Linz,Institute of Advanced Research in Artificial Intelligence,University of Oslo",2020,Open weights (unrestricted),Open weights,Academia
+SemExp,"Carnegie Mellon University (CMU),Facebook AI Research",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+GShard (dense),Google,2020,Unreleased,Unreleased,Industry
+GPT-3 175B (davinci),OpenAI,2020,API access,API or hosted access,Industry
+DETR,Facebook,2020,Open weights (unrestricted),Open weights,Industry
+Retrieval-Augmented Generator,"Facebook,New York University (NYU),University College London (UCL)",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Conformer,Google,2020,Unreleased,Unreleased,Industry
+ContextNet,Google,2020,Unreleased,Unreleased,Industry
+NAS+ESS (23M),"Northeastern University (China),NiuTrans Research,Kingsoft",2020,Unreleased,Unreleased,Industry–academia collaboration
+UnifiedQA,"Allen Institute for AI,University of Washington",2020,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+Once for All,"MIT-IBM Watson AI Lab,Massachusetts Institute of Technology (MIT),IBM",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Go-explore,"Uber AI,OpenAI",2020,Unreleased,Unreleased,Industry
+CURL,University of California (UC) Berkeley,2020,Open weights (unrestricted),Open weights,Academia
+Agent57,DeepMind,2020,Unreleased,Unreleased,Industry
+MetNet,Google,2020,Unreleased,Unreleased,Industry
+ELECTRA,"Stanford University,Google,Google Brain",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Tensor-Transformer(1core)+PN (WT103),University of California (UC) Berkeley,2020,Open weights (unrestricted),Open weights,Academia
+Routing Transformer (WT-103),Google Research,2020,Open weights (unrestricted),Open weights,Industry
+TransformerXL + spectrum control,"University of California Los Angeles (UCLA),JD.com",2020,Unreleased,Unreleased,Industry–academia collaboration
+TCAN (WT2),"Nanjing University,Ant Group",2020,Unreleased,Unreleased,Industry–academia collaboration
+Feedback Transformer,"LORIA,University of Lorraine,Facebook AI Research",2020,Unreleased,Unreleased,Industry–academia collaboration
+FFN SwiGLU,Google,2020,Unreleased,Unreleased,Industry
+Turing-NLG,Microsoft,2020,Unreleased,Unreleased,Industry
+SimCLR,Google Brain,2020,Open weights (unrestricted),Open weights,Industry
+ALBERT-xxlarge,"Toyota Technological Institute at Chicago,Google",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+TaLK Convolution,Carleton University,2020,Unreleased,Unreleased,Academia
+Perceiver IO (optical flow),DeepMind,2020,Unreleased,Unreleased,Industry
+Theseus 6/768,"University of California San Diego,Beihang University,Microsoft",2020,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Meena,Google Brain,2020,Unreleased,Unreleased,Industry
+ContextNet + Noisy Student,Google,2020,Unreleased,Unreleased,Industry
+AlphaFold,DeepMind,2020,Unreleased,Unreleased,Industry
+Big Transfer (BiT-L),Google Brain,2019,Unreleased,Unreleased,Industry
+DD-PPO,"Georgia Institute of Technology,Facebook AI Research,Oregon State University,Simon Fraser University",2019,Unreleased,Unreleased,Industry–academia collaboration
+OpenAI Five Rerun,OpenAI,2019,Unreleased,Unreleased,Industry
+OpenAI Five,OpenAI,2019,Unreleased,Unreleased,Industry
+MMLSTM (WT-2),"Beijing University of Posts and Telecommunications,University of West London",2019,Unreleased,Unreleased,Academia
+MMLSTM (PTB),"Beijing University of Posts and Telecommunications,University of West London",2019,Unreleased,Unreleased,Academia
+StarGAN v2,"NAVER,Yonsei University,Swiss Federal Institute of Technology",2019,Open weights (non-commercial),Open weights,Industry–academia collaboration
+StyleGAN2,"Nvidia,Aalto University",2019,Open weights (restricted use),Open weights,Industry–academia collaboration
+Transformer-XL DeFINE (141M),"University of Washington,Allen Institute for AI",2019,Unreleased,Unreleased,"Other (government, research collectives)"
+Photo-Geometric Autoencoder,University of Oxford,2019,Open weights (unrestricted),Open weights,Academia
+Transformer - LibriVox + Decoding/Rescoring,Facebook,2019,Open weights (unrestricted),Open weights,Industry
+MuZero,DeepMind,2019,Unreleased,Unreleased,Industry
+MoCo,Facebook AI,2019,Open weights (non-commercial),Open weights,Industry
+Noisy Student (L2),"Carnegie Mellon University (CMU),Google",2019,Unreleased,Unreleased,Industry–academia collaboration
+Sandwich Transformer,"Allen Institute for AI,Facebook AI Research",2019,Unreleased,Unreleased,"Other (government, research collectives)"
+CamemBERT,"Facebook,INRIA,Sorbonne University",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+XLM-RoBERTa,Facebook AI,2019,Open weights (non-commercial),Open weights,Industry
+Base LM + kNN LM + Continuous Cache,"Stanford University,Facebook AI Research",2019,Unreleased,Unreleased,Industry–academia collaboration
+AlphaStar,DeepMind,2019,Unreleased,Unreleased,Industry
+BART-large,Facebook AI,2019,Open weights (unrestricted),Open weights,Industry
+T5-11B,Google,2019,Open weights (unrestricted),Open weights,Industry
+T5-3B,Google,2019,Open weights (unrestricted),Open weights,Industry
+M4-50B,Google,2019,Unreleased,Unreleased,Industry
+DistilBERT,Hugging Face,2019,Open weights (unrestricted),Open weights,Industry
+AlphaX-1,"Facebook AI Research,Brown University",2019,Unreleased,Unreleased,Industry–academia collaboration
+ALBERT,"Toyota Technological Institute at Chicago,Google Research",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Adaptive Inputs + LayerDrop,"Facebook AI Research,LORIA",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Megatron-LM (8.3B),Nvidia,2019,Unreleased,Unreleased,Industry
+Megatron-LM (1.2B),Nvidia,2019,Unreleased,Unreleased,Industry
+Megatron-BERT,Nvidia,2019,Unreleased,Unreleased,Industry
+UDSMProt,Fraunhofer Heinrich Hertz Institute,2019,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+"Mogrifier (d2, MoS2, MC) + dynamic eval","DeepMind,University of Oxford",2019,Unreleased,Unreleased,Industry–academia collaboration
+trRosetta,"Nankai University,University of Washington,Tianjin University,Harvard University",2019,Open weights (unrestricted),Open weights,Academia
+EN^2AS with performance reward,"Beijing Institute of Technology,University of Technology Sydney,Monash University",2019,Unreleased,Unreleased,Academia
+Pluribus,Facebook AI Research,2019,Unreleased,Unreleased,Industry
+BigBiGAN,Google,2019,Open weights (unrestricted),Open weights,Industry
+RoBERTa Large,"Facebook,University of Washington",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Walking Minotaur robot,"University of California (UC) Berkeley,Google Brain",2019,Unreleased,Unreleased,Industry–academia collaboration
+LaNet-L (CIFAR-10),"Brown University,Facebook",2019,Open weights (non-commercial),Open weights,Industry–academia collaboration
+PG-SWGAN,ETH Zurich,2019,Unreleased,Unreleased,Academia
+FixRes ResNeXt-101 WSL,Facebook AI,2019,Open weights (non-commercial),Open weights,Industry
+Char-CNN-BiLSTM,Capital One,2019,Unreleased,Unreleased,Industry
+AWD-LSTM + MoS + Partial Shuffled,University of Texas at Austin,2019,Open weights (non-commercial),Open weights,Academia
+Transformer-XL Large + Phrase Induction,"Massachusetts Institute of Technology (MIT),University of Illinois Urbana-Champaign (UIUC)",2019,Unreleased,Unreleased,Academia
+XLNet,"Carnegie Mellon University (CMU),Google Brain",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+XLM,Facebook,2019,Open weights (non-commercial),Open weights,Industry
+DLRM-2020,Facebook AI,2019,Unreleased,Unreleased,Industry
+EfficientNet-L2,Google,2019,Open weights (unrestricted),Open weights,Industry
+CPC v2,"DeepMind,University of California (UC) Berkeley",2019,Unreleased,Unreleased,Industry–academia collaboration
+AWD-LSTM-DRILL + dynamic evaluation† (WT2),IDIAP,2019,Open weights (unrestricted),Open weights,Academia
+ResNeXt-101 Billion-scale,Facebook AI,2019,Open weights (non-commercial),Open weights,Industry
+RaptorX-Contact,Toyota Technological Institute at Chicago,2019,Unreleased,Unreleased,Academia
+Neuro-Symbolic Concept Learner,"Massachusetts Institute of Technology (MIT),Tsinghua University,MIT-IBM Watson AI Lab,DeepMind",2019,Unreleased,Unreleased,Industry–academia collaboration
+MuseNet,OpenAI,2019,Unreleased,Unreleased,Industry
+BERT-Large-CAS (PTB+WT2+WT103),Amazon,2019,Unreleased,Unreleased,Industry
+Transformer-XL + RMS dynamic eval,University of Edinburgh,2019,Unreleased,Unreleased,Academia
+WeNet (Penn Treebank),Amazon,2019,Unreleased,Unreleased,Industry
+True-Regularization+Finetune+Dynamic-Eval,"Mobvoi,Williams College",2019,Unreleased,Unreleased,Industry–academia collaboration
+Cross-lingual alignment,"Tel Aviv University,Massachusetts Institute of Technology (MIT)",2019,Open weights (unrestricted),Open weights,Academia
+SciBERT,Allen Institute for AI,2019,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+NMT Transformer 437M,"Google,Bar-Ilan University",2019,Unreleased,Unreleased,Industry–academia collaboration
+KataGo,Jane Street,2019,Open weights (unrestricted),Open weights,Industry
+GPT-2 (1.5B),OpenAI,2019,Open weights (unrestricted),Open weights,Industry
+SDE,"Carnegie Mellon University (CMU),Google Brain,Monash University",2019,Unreleased,Unreleased,Industry–academia collaboration
+Hanabi 4 player,"DeepMind,University of Oxford,Carnegie Mellon University (CMU),Google Brain",2019,Unreleased,Unreleased,Industry–academia collaboration
+MT-DNN,Microsoft,2019,Open weights (unrestricted),Open weights,Industry
+Transformer-XL (257M),"Carnegie Mellon University (CMU),Google Brain",2019,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Transformer ELMo,"Allen Institute for AI,University of Washington",2019,Unreleased,Unreleased,"Other (government, research collectives)"
+StyleGAN,Nvidia,2018,Open weights (non-commercial),Open weights,Industry
+SPN (ImageNet 128),"Google Brain,DeepMind",2018,Unreleased,Unreleased,Industry
+GPipe (Transformer),Google,2018,,Not recorded,Industry
+Multi-cell LSTM,University of Hyderabad,2018,Unreleased,Unreleased,Academia
+Fine-tuned-AWD-LSTM-DOC (fin),Samsung R&D Institute Russia,2018,Unreleased,Unreleased,Industry
+Mesh-TensorFlow Transformer 4.9B (language),Google Brain,2018,Unreleased,Unreleased,Industry
+Mesh-TensorFlow Transformer 2.9B (translation),Google Brain,2018,Unreleased,Unreleased,Industry
+MemoReader,"Samsung,Korea University",2018,Unreleased,Unreleased,Industry–academia collaboration
+TrellisNet,"Carnegie Mellon University (CMU),Bosch Center for Artificial Intelligence,Intel Labs",2018,Unreleased,Unreleased,Industry–academia collaboration
+MetaMimic,Google,2018,,Not recorded,Industry
+BERT-Large,Google,2018,Open weights (unrestricted),Open weights,Industry
+Transformer (Adaptive Input Embeddings) WT103,Facebook AI Research,2018,Open weights (unrestricted),Open weights,Industry
+LSTM+NeuralCache,"KU Leuven,ESAT - PSI,Apple",2018,Unreleased,Unreleased,Industry–academia collaboration
+"AWD-LSTM-MoS + dynamic evaluation (WT2, 2018)","Peking University,Microsoft Research Asia",2018,Unreleased,Unreleased,Industry–academia collaboration
+Transformer + Simple Recurrent Unit,"ASAPP,Cornell University,Google,Princeton University",2018,Unreleased,Unreleased,Industry–academia collaboration
+NetSurfP-2.0,"Technical University of Denmark,University of Copenhagen,Universidad Nacional de San Martín,AIMST University",2018,Hosted access (no API),API or hosted access,Academia
+(ensemble): AWD-LSTM-DOC (fin) × 5 (WT2),"NTT Communication Science Laboratories,Tohoku University",2018,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Big Transformer for Back-Translation,"Facebook AI Research,Google Brain",2018,Open weights (unrestricted),Open weights,Industry
+AWD-LSTM-MoS+PDR + dynamic evaluation (WT2),IBM,2018,Unreleased,Unreleased,Industry
+Big-Little Net (speech),IBM,2018,Open weights (unrestricted),Open weights,Industry
+Big-Little Net,IBM,2018,Open weights (unrestricted),Open weights,Industry
+FTW (For The Win),DeepMind,2018,Unreleased,Unreleased,Industry
+MobileNetV2,Google,2018,,Not recorded,Industry
+Relational Memory Core,"DeepMind,University College London (UCL)",2018,Unreleased,Unreleased,Industry–academia collaboration
+GPT-1,OpenAI,2018,Open weights (unrestricted),Open weights,Industry
+aLSTM(depth-2)+RecurrentPolicy (WT2),"University of Manchester,Alan Turing Institute",2018,Unreleased,Unreleased,"Other (government, research collectives)"
+Dropout-LSTM+Noise(Bernoulli) (WT2),"Columbia University,New York University (NYU),Princeton University",2018,Unreleased,Unreleased,Academia
+ResNeXt-101 32x48d,Facebook,2018,Open weights (non-commercial),Open weights,Industry
+YOLOv3,University of Washington,2018,Unreleased,Unreleased,Academia
+4 layer QRNN (h=2500),Salesforce Research,2018,Unreleased,Unreleased,Industry
+Chinese - English translation,Microsoft,2018,,Not recorded,Industry
+TCN (P-MNIST),"Carnegie Mellon University (CMU),Intel Labs",2018,,Not recorded,Industry–academia collaboration
+DeepLabV3+,Google,2018,,Not recorded,Industry
+IMPALA,DeepMind,2018,Unreleased,Unreleased,Industry
+QRNN,Salesforce Research,2018,Unreleased,Unreleased,Industry
+ELMo,"University of Washington,Allen Institute for AI",2018,,Not recorded,"Other (government, research collectives)"
+T-DMCA,Google Brain,2018,Unreleased,Unreleased,Industry
+AlphaZero,DeepMind,2017,Unreleased,Unreleased,Industry
+DL scaling speech,Baidu,2017,Unreleased,Unreleased,Industry
+DL scaling LM,Baidu,2017,Unreleased,Unreleased,Industry
+DL scaling Image,Baidu,2017,Unreleased,Unreleased,Industry
+TriNet,"Visual Computing Institute,RWTH Aachen University",2017,,Not recorded,Academia
+"AWD-LSTM-MoS + dynamic evaluation (WT2, 2017)",Carnegie Mellon University (CMU),2017,Unreleased,Unreleased,Academia
+VQ-VAE,DeepMind,2017,Unreleased,Unreleased,Industry
+Fraternal dropout + AWD-LSTM 3-layer (WT2),"Jagiellonian University,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms),University of Montreal / Université de Montréal",2017,Unreleased,Unreleased,Academia
+DCN+,Salesforce Research,2017,Unreleased,Unreleased,Industry
+S-Norm,"University of Washington,Allen Institute for AI",2017,,Not recorded,"Other (government, research collectives)"
+PhraseCond,"Carnegie Mellon University (CMU),University of Pittsburgh",2017,,Not recorded,Academia
+ProgressiveGAN,Nvidia,2017,,Not recorded,Industry
+AlphaGo Master,DeepMind,2017,Unreleased,Unreleased,Industry
+AlphaGo Zero,DeepMind,2017,Unreleased,Unreleased,Industry
+Rainbow DQN,DeepMind,2017,Unreleased,Unreleased,Industry
+AWD-LSTM+WT+Cache+IOG (WT2),NTT Communication Science Laboratories,2017,Unreleased,Unreleased,Industry
+LSTM + dynamic eval,University of Edinburgh,2017,Unreleased,Unreleased,Academia
+ISS,"Duke University,Microsoft",2017,Unreleased,Unreleased,Industry–academia collaboration
+PyramidNet,Korea Advanced Institute of Science and Technology (KAIST),2017,Open weights (unrestricted),Open weights,Academia
+SENet (ImageNet),"Chinese Academy of Sciences,University of Oxford",2017,,Not recorded,Academia
+GL-LWGC-AWD-MoS-LSTM + dynamic evaluation (WT2),Ben-Gurion University of the Negev,2017,Unreleased,Unreleased,Academia
+Libratus,Carnegie Mellon University (CMU),2017,Unreleased,Unreleased,Academia
+NeuMF (Pinterest),"Shandong University,Texas A&M,National University of Singapore,Columbia University",2017,,Not recorded,Academia
+EI-REHN-1000D,Korea Advanced Institute of Science and Technology (KAIST),2017,Unreleased,Unreleased,Academia
+OpenAI TI7 DOTA 1v1,OpenAI,2017,,Not recorded,Industry
+RetinaNet-R101,Facebook AI Research,2017,,Not recorded,Industry
+RetinaNet-R50,Facebook AI Research,2017,,Not recorded,Industry
+AWD-LSTM - 3-layer LSTM (tied) + continuous cache pointer (WT2),Salesforce Research,2017,Unreleased,Unreleased,Industry
+GSM,"Peking University,Microsoft Research",2017,,Not recorded,Industry–academia collaboration
+ConvS2S (ensemble of 8 models),Meta AI,2017,,Not recorded,Industry
+PSPNet,Chinese University of Hong Kong (CUHK),2017,,Not recorded,Academia
+NASNet-A,Google Brain,2017,,Not recorded,Industry
+AWD-LSTM,"DeepMind,University of Oxford",2017,Unreleased,Unreleased,Industry–academia collaboration
+JFT,"Google Research,Carnegie Mellon University (CMU)",2017,,Not recorded,Industry–academia collaboration
+DeepLoc,"Technical University of Denmark,University of Copenhagen",2017,Hosted access (no API),API or hosted access,Academia
+ShuffleNet v1,Megvii Inc,2017,,Not recorded,Industry
+NoisyNet-Dueling,DeepMind,2017,Unreleased,Unreleased,Industry
+DeepLabV3,Google,2017,,Not recorded,Industry
+HRA,"Maluuba,Microsoft",2017,,Not recorded,Industry
+Transformer,"Google Research,Google Brain",2017,Unreleased,Unreleased,Industry
+EDSR,Seoul National University,2017,,Not recorded,Academia
+Reading Twice for NLU,DeepMind,2017,,Not recorded,Industry
+PointNet++,Stanford University,2017,,Not recorded,Academia
+Inflated 3D ConvNet,"DeepMind,University of Oxford",2017,,Not recorded,Industry–academia collaboration
+SRGAN,Twitter,2017,Unreleased,Unreleased,Industry
+Mnemonic Reader,"Fudan University,Microsoft Research",2017,,Not recorded,Industry–academia collaboration
+DeepLab (2017),"Johns Hopkins University,Google,University College London (UCL)",2017,,Not recorded,Industry–academia collaboration
+MobileNet,Google,2017,,Not recorded,Industry
+WGAN-GP,"Courant Institute of Mathematical Sciences,Mila - Quebec AI (originally Montreal Institute for Learning Algorithms)",2017,Unreleased,Unreleased,Academia
+Mask R-CNN,Facebook AI Research,2017,,Not recorded,Industry
+Prototypical networks,"University of Toronto,Twitter",2017,,Not recorded,Industry–academia collaboration
+DnCNN,"Harbin Institute of Technology,Hong Kong Polytechnic University,ULSee Inc.,Xi’an Jiaotong University",2017,,Not recorded,Industry–academia collaboration
+MoE-Multi,"Jagiellonian University,Google Brain",2017,Unreleased,Unreleased,Industry–academia collaboration
+OR-WideResNet,"Duke University,University of Chinese Academy of Sciences",2017,,Not recorded,Academia
+DeepStack,"University of Alberta,Charles University,Czech Technical University",2017,,Not recorded,Academia
+YOLOv2,"University of Washington,Allen Institute for AI",2016,Open weights (non-commercial),Open weights,"Other (government, research collectives)"
+EnhanceNet,Max Planck Institute for Intelligent Systems,2016,Open weights (unrestricted),Open weights,Academia
+3DMM-CNN,University of Southern California,2016,Open weights (restricted use),Open weights,Academia
+HR-ResNet101,Carnegie Mellon University (CMU),2016,Open weights (unrestricted),Open weights,Academia
+GAN-Advancer,OpenAI,2016,Unreleased,Unreleased,Industry
+PointNet,Stanford University,2016,,Not recorded,Academia
+Elastic weight consolidation,DeepMind,2016,,Not recorded,Industry
+Image-to-image cGAN,University of California (UC) Berkeley,2016,,Not recorded,Academia
+PolyNet,Chinese University of Hong Kong (CUHK),2016,,Not recorded,Academia
+ResNeXt-101 (64×4d),"University of California San Diego,Facebook",2016,Open weights (unrestricted),Open weights,Industry–academia collaboration
+ResNeXt-50,"University of California San Diego,Facebook",2016,Open weights (unrestricted),Open weights,Industry–academia collaboration
+DAC-CSR,"Jiangnan University,University of Surrey",2016,Unreleased,Unreleased,Academia
+DTN (Domain Transfer Network),Facebook AI Research,2016,Unreleased,Unreleased,Industry
+DLDL (PASCAL),University of Oxford,2016,Open weights (unrestricted),Open weights,Academia
+NASv3 (CIFAR-10),Google Brain,2016,,Not recorded,Industry
+NAS with base 8 and shared embeddings,Google Brain,2016,Unreleased,Unreleased,Industry
+BIDAF,"University of Washington,Allen Institute for AI",2016,Open weights (unrestricted),Open weights,"Other (government, research collectives)"
+VD-LSTM+REAL Large,"Salesforce Research,Stanford University",2016,Unreleased,Unreleased,Industry–academia collaboration
+SPIDER2,"Griffith University,University of Iowa,Dezhou University",2016,Open weights (non-commercial),Open weights,Academia
+GAWWN,"University of Michigan,Max Planck Institute for Informatics",2016,Unreleased,Unreleased,Academia
+Xception,Google,2016,,Not recorded,Industry
+Pointer Sentinel-LSTM (medium),"MetaMind Inc,Salesforce",2016,Unreleased,Unreleased,Industry
+GNMT,Google,2016,Hosted access (no API),API or hosted access,Industry
+Wide Residual Network,Université Paris-Est,2016,,Not recorded,Academia
+ResNet-1001,Microsoft,2016,,Not recorded,Industry
+ResNet-200,Microsoft Research Asia,2016,Unreleased,Unreleased,Industry
+Youtube recommendation model,Google,2016,,Not recorded,Industry
+WaveNet,Google DeepMind,2016,,Not recorded,Industry
+MS-ensemble-speech-recognition,Microsoft,2016,Unreleased,Unreleased,Industry
+LF-MMI,"Johns Hopkins University,Cornell University",2016,Unreleased,Unreleased,Academia
+DenseNet-264,"Tsinghua University,Facebook AI Research,Cornell University",2016,Open weights (unrestricted),Open weights,Industry–academia collaboration
+SimpleNet,"Sensifai,Islamic Azad University,Technicolor R&I,Institute for Research in Fundamental Sciences (IPM)",2016,,Not recorded,Industry–academia collaboration
+Character-enriched word2vec,Facebook AI Research,2016,,Not recorded,Industry
+CCL,"SenseTime,Chinese University of Hong Kong (CUHK),Chinese Academy of Sciences",2016,Unreleased,Unreleased,Industry–academia collaboration
+R-FCN,"Tsinghua University,Microsoft Research",2016,,Not recorded,Industry–academia collaboration
+Segmental RNN,"University of Edinburgh,Carnegie Mellon University (CMU),University of Washington",2016,Unreleased,Unreleased,Academia
+CMS-RCNN,IEEE,2016,Unreleased,Unreleased,Industry
+PixelCNN,Google DeepMind,2016,,Not recorded,Industry
+LRR-4X,UC Irvine,2016,Open weights (unrestricted),Open weights,Academia
+Gated HORNN (3rd order),York University,2016,Unreleased,Unreleased,Academia
+Dueling DQN,Google DeepMind,2016,Unreleased,Unreleased,Industry
+Template Adaptation,University of Oxford,2016,Unreleased,Unreleased,Academia
+Named Entity Recognition model,Carnegie Mellon University (CMU),2016,,Not recorded,Academia
+Double DQN,Google DeepMind,2016,Unreleased,Unreleased,Industry
+SqueezeNet,"DeepScale,University of California (UC) Berkeley,Stanford University",2016,,Not recorded,Academia
+Inceptionv4,Google,2016,,Not recorded,Industry
+Inception-ResNet-V2,Google,2016,,Not recorded,Industry
+A3C FF hs,"Google,University of Montreal / Université de Montréal",2016,,Not recorded,Industry–academia collaboration
+AlphaGo Lee,DeepMind,2016,Unreleased,Unreleased,Industry
+"Variational (untied weights, MC) LSTM (Large)",University of Cambridge,2015,Unreleased,Unreleased,Academia
+Advantage Learning,Google DeepMind,2015,,Not recorded,Industry
+ResNet-152 (ImageNet),Microsoft,2015,,Not recorded,Industry
+ResNet-110 (CIFAR-10),Microsoft,2015,,Not recorded,Industry
+ResNet-101 (ImageNet),Microsoft,2015,Open weights (unrestricted),Open weights,Industry
+SSD,,2015,Open weights (unrestricted),Open weights,Not recorded
+Inception v3,"Google,University College London (UCL)",2015,,Not recorded,Industry–academia collaboration
+Netflix Recommender System,Netflix,2015,,Not recorded,Industry
+Multi-scale Dilated CNN,"Princeton University,Intel Labs",2015,,Not recorded,Industry–academia collaboration
+3DDFA,"Chinese Academy of Sciences,Michigan State University",2015,Unreleased,Unreleased,Academia
+SAF R-CNN,"Beijing Institute of Technology,Sun Yat-sen University,Panasonic R&D,National University of Singapore",2015,Unreleased,Unreleased,Industry–academia collaboration
+AlphaGo Fan,DeepMind,2015,Unreleased,Unreleased,Industry
+Deep Deterministic Policy Gradients,Google DeepMind,2015,,Not recorded,Industry
+BPE,University of Edinburgh,2015,,Not recorded,Academia
+DCNN,"University of Maryland,Rutgers University",2015,Unreleased,Unreleased,Academia
+Deep CNN + COTS,IEEE,2015,Unreleased,Unreleased,Industry
+CompACT-Deep,University of California San Diego,2015,Unreleased,Unreleased,Academia
+BatchNorm,Google,2015,,Not recorded,Industry
+YOLO,"University of Washington,Allen Institute for AI,Facebook AI Research",2015,,Not recorded,Industry–academia collaboration
+CFSS,"SenseTime,Chinese University of Hong Kong (CUHK),Shenzhen Institute of Advanced Technology",2015,Open weights (unrestricted),Open weights,Industry–academia collaboration
+Faster R-CNN,Microsoft Research,2015,Open weights (unrestricted),Open weights,Industry
+U-Net,University of Freiburg,2015,Open weights (unrestricted),Open weights,Academia
+Fast R-CNN,Microsoft Research,2015,,Not recorded,Industry
+TC-DNN-BLSTM-DNN,Carnegie Mellon University (CMU),2015,Unreleased,Unreleased,Academia
+genCNN + dyn eval,"Chinese Academy of Sciences,Huawei Noah's Ark Lab,Dublin City University",2015,Unreleased,Unreleased,Industry–academia collaboration
+DQN-2015,Google,2015,,Not recorded,Industry
+TRPO,University of California (UC) Berkeley,2015,Unreleased,Unreleased,Academia
+"MSRA (C, PReLU)",Microsoft Research,2015,,Not recorded,Industry
+VGG-Face,University of Oxford,2015,Unreleased,Unreleased,Academia
