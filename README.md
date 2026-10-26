@@ -14,10 +14,10 @@ An interactive Streamlit data narrative built on Epoch AI's *Notable AI Models* 
 
 | Section | What it shows | Owner |
 |---|---|---|
-| Overview | Share of notable models developed by industry, academia and collaborations over time | TBC |
+| Overview | Share of notable models developed by industry, academia and collaborations over time | Kylie |
 | Concentration | Top five organisations' shares of model counts and recorded training compute | Hao |
-| Geography | Countries ranked by notable model counts, and which organisations contribute | TBC |
-| Openness | Model release categories across organisation types over time | TBC |
+| Geography | Countries ranked by notable model counts, and which organisations contribute | Weiran |
+| Openness | Model release categories across organisation types over time | Hao |
 
 ## Data
 
