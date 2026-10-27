@@ -1,6 +1,7 @@
 """Preprocess Epoch AI model affiliations for the Geography dashboard."""
 
 import pandas as pd
+from scripts.prepare_concentration import PARENT
 
 
 def flatten_attributions(csv_path: str):
@@ -19,6 +20,11 @@ def flatten_attributions(csv_path: str):
         # Exclude misaligned rows from institution-country pair breakdown rather than guess.
         if len(org_list) == len(country_list):
             for org, country in set(zip(org_list, country_list)):
-                org_rows.append({**base,'Country':country,'Organisation':org})
-    return models, pd.DataFrame(country_rows), pd.DataFrame(org_rows)
-
+                # Apply the same parent-company mapping as Concentration.
+                parent_org = PARENT.get(org, org)
+                org_rows.append({**base, 'Country': country, 'Organisation': parent_org})
+    # One model can list multiple labs belonging to the same parent company.
+    # De-duplicate after mapping, separately within each affiliated country.
+    org_df = pd.DataFrame(org_rows, columns=['Model', 'Year', 'CSV row', 'Country', 'Organisation'])
+    org_df = org_df.drop_duplicates(subset=['CSV row', 'Country', 'Organisation'])
+    return models, pd.DataFrame(country_rows), org_df
