@@ -17,10 +17,12 @@ def render() -> None:
     st.header('Geography: where are the leading AI organisations based?')
     st.caption('Source: Epoch AI, Notable AI Models; publication years 2015–2025.')
     if not DATA_PATH.exists():
-        st.error(f'Missing dataset: {DATA_PATH}. Place notable_ai_models.csv in the data/ directory.'); st.stop()
+        st.error(f'Missing dataset: {DATA_PATH}. Place notable_ai_models.csv in data/raw/.')
+        return
     models, country_model, org_model = load_geography_data(str(DATA_PATH))
     if country_model.empty:
-        st.error('No valid country records in the selected years.'); st.stop()
+        st.error('No valid country records in the selected years.')
+        return
 
     left, right = st.columns([3,2])
     with left:
@@ -33,10 +35,10 @@ def render() -> None:
 
     country_counts = cm.groupby('Country',as_index=False).agg(Models=('CSV row','nunique')).sort_values(['Models','Country'],ascending=[False,True])
     leader = country_counts.iloc[0]
-    a,b,c = st.columns(3)
+    a,b,c = st.columns([1, 1, 1.8])
     a.metric('Distinct notable models',f'{len(m):,}')
     b.metric('Countries represented',f'{len(country_counts):,}')
-    c.metric('Leading country',leader['Country'])
+    c.metric('Leading country', leader['Country'])
 
     st.markdown('### 1 · Countries ranked by notable-model participation')
     st.caption('Each model counts once for each participating country. Collaborations may be counted in more than one country.')
@@ -62,7 +64,7 @@ def render() -> None:
         st.plotly_chart(fig2,width='stretch')
         top_org = organisation_counts.iloc[0]
         st.markdown(f'**What this shows:** {top_org["Organisation"]} is the largest identifiable organisation contributor for {selected} in {year_start}–{year_end}, with {int(top_org["Models"]):,} notable model records. This is a contribution count, not a capability ranking.')
-        st.caption('Collaborative models are credited to each participating institution. Institution counts are not additive.')
+        st.caption('Collaborative models are credited to each participating parent organisation. Multiple labs under one parent are counted once per model and country; organisation counts are not additive.')
 
     st.markdown('### 3 · Trace a displayed number back to the CSV')
     if selected in country_counts['Country'].values:
@@ -74,4 +76,4 @@ def render() -> None:
         st.download_button('Download evidence rows as CSV',evidence.to_csv(index=False).encode('utf-8'),file_name='geography_evidence.csv',mime='text/csv')
 
     with st.expander('Methodology, limitations and citation'):
-        st.markdown('''**Source:** Epoch AI, *Data on AI models*, https://epoch.ai/data/ai-models, provided snapshot of 21 October 2026.\n\n**Filter:** Publication date in calendar years 2015–2025 (inclusive). **Unit:** one record in the Notable AI Models CSV. **Country counts:** split comma-separated country affiliations, trim whitespace, de-duplicate country assignments per model. **Institution chart:** pair comma-separated organisations and countries by position when both lists have equal length; count each model once per organisation-country pair. Mismatched or missing pairs are excluded from the institution chart, not imputed.\n\n**Limitations:** Country is recorded organisational affiliation, not necessarily where model training took place. Collaboration leads to multi-country credit and non-additive country counts. Organisation aliases (e.g. Google/Google DeepMind) have not been merged. Notable model counts do not directly measure AI capability, quality or compute. The 2025 year may reflect source coverage and reporting bias.''')
+        st.markdown('''**Source:** Epoch AI, *Data on AI models*, https://epoch.ai/data/ai-models, provided snapshot of 21 October 2026.\n\n**Filter:** Publication date in calendar years 2015–2025 (inclusive). **Unit:** one record in the Notable AI Models CSV. **Country counts:** split comma-separated country affiliations, trim whitespace, de-duplicate country assignments per model. **Institution chart:** pair comma-separated organisations and countries by position when both lists have equal length; map organisations to parent companies using the same PARENT mapping as Concentration and de-duplicate each model within each parent-country pair. Mismatched or missing pairs are excluded from the institution chart, not imputed.\n\n**Limitations:** Country is recorded organisational affiliation, not necessarily where model training took place. Collaboration leads to multi-country credit and non-additive country counts. Selected organisation aliases are merged under parent companies using the shared Concentration mapping; other aliases may remain. Notable model counts do not directly measure AI capability, quality or compute. The 2025 year may reflect source coverage and reporting bias.''')
