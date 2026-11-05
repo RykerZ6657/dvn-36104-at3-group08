@@ -7,8 +7,8 @@ All processed files are rebuilt from the raw file by the scripts in `scripts/`; 
 |---|---|---|---|---|---|
 | Notable AI Models (source) | `data/raw/notable_ai_models.csv` | 1,078 | `Model` | Downloaded from Epoch AI | All sections |
 | Organisation credit | `data/processed/concentration_org_credit.csv` | 1,202 | `Model`, `org` | `scripts/prepare_concentration.py` | Concentration |
-| Concentration by year | `data/processed/concentration_by_year.csv` | 11 | `year` | `scripts/prepare_concentration.py` | Concentration |
-| Openness by model | `data/processed/openness_models.csv` | 782 | `Model` | `scripts/prepare_openness.py` | Openness |
+| Concentration by year | `data/processed/concentration_by_year.csv` | 11 | `year` | `scripts/prepare_concentration.py` | Concentration, opening answer |
+| Openness by model | `data/processed/openness_models.csv` | 782 | `Model` | `scripts/prepare_openness.py` | Openness, opening answer |
 | Country and organisation attributions | built in memory, not saved | 962 / 1,134 | see below | `scripts/geography_processing.py` | Geography |
 
 ---

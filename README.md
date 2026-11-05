@@ -22,6 +22,7 @@ An interactive Streamlit data narrative built on Epoch AI's *Notable AI Models* 
 
 | Section | What it shows | Owner |
 |---|---|---|
+| Opening answer | The app's answer to the question and what the data cannot show, above the tabs | Hao |
 | Overview | Share of notable models developed by industry, academia and collaborations over time | Kylie |
 | Concentration | Top five organisations' shares of model counts and recorded training compute | Hao |
 | Geography | Countries ranked by notable model counts, and which organisations contribute | Weiran |

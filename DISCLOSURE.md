@@ -12,6 +12,6 @@ The dataset lists paper authors, but the app does not use or display any persona
 
 Group members used generative AI tools during this project. Each substantive use is recorded in `AI_PROVENANCE.md`, with what was asked, what came back, how it was checked and what was kept.
 
-AI tools were used to help write data processing and Streamlit code, review pull requests and draft documentation. AI was not used as a source of data: every number shown in the app is computed from the Epoch AI file by the committed scripts, and the numbers quoted in the provenance matrix were checked against that file.
+AI tools were used to help write data processing and Streamlit code, review pull requests, check the app against the marking criteria, and draft documentation, on-screen text and a recording script. AI was not used as a source of data: every number shown in the app is computed from the Epoch AI file by the committed scripts, and the numbers quoted in the provenance matrix were checked against that file.
 
 The group takes responsibility for all submitted work, including any part produced with AI help.
