@@ -15,15 +15,18 @@ def render() -> None:
     first, last = int(by_year.index.min()), int(by_year.index.max())
     industry = (models["org_type"] == "Industry").groupby(models["year"]).mean() * 100
     first_models = int((models["year"] == first).sum())
+    recent = last - 2
 
     st.markdown(
-        f"**Short answer: concentrated, but not clearly becoming more so.** From {first} to {last}, the top five "
-        f"organisations held on average **{by_year['top5_model_share_pct'].mean():.0f}%** of notable models and "
+        f"**Short answer: concentrated throughout, with no clear long-run rise, but the last two years point towards "
+        f"more concentration.** From {first} to {last}, the top five organisations held on average "
+        f"**{by_year['top5_model_share_pct'].mean():.0f}%** of notable models and "
         f"**{by_year['top5_compute_share_pct'].mean():.0f}%** of recorded training compute, and neither share rises steadily. "
-        f"Both jumped in {last}, to {by_year.loc[last, 'top5_model_share_pct']:.0f}% and "
-        f"{by_year.loc[last, 'top5_compute_share_pct']:.0f}%; a reader who weighs that year heavily could see renewed "
-        f"concentration, but one year is not a trend. The clearer shift is between sectors: industry built "
-        f"{industry.loc[first]:.0f}% of notable models in {first} and {industry.loc[last]:.0f}% in {last}, "
+        f"Since {recent}, however, the number of organisations credited has fallen from "
+        f"{by_year.loc[recent, 'organisations']} to {by_year.loc[last, 'organisations']}, while the top five's share of models "
+        f"has risen from {by_year.loc[recent, 'top5_model_share_pct']:.0f}% to {by_year.loc[last, 'top5_model_share_pct']:.0f}%. "
+        f"Two years is too short to call a trend, and recent years may be less complete. The clearer shift is between "
+        f"sectors: industry built {industry.loc[first]:.0f}% of notable models in {first} and {industry.loc[last]:.0f}% in {last}, "
         f"though {first} has only {first_models} models."
     )
     st.markdown(
