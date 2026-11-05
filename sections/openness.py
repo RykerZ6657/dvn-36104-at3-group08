@@ -16,6 +16,8 @@ DATA = Path(__file__).resolve().parents[1] / "data" / "processed"
 RELEASE_ORDER = ["Open weights", "API or hosted access", "Unreleased", "Not recorded"]
 RELEASE_COLOURS = ["#009E73", "#56B4E9", "#D55E00", "#BBBBBB"]
 ORG_ORDER = ["Industry", "Industry–academia collaboration", "Academia", "Other (government, research collectives)"]
+# Segments below this share (%) are too thin for a label, so small_segments() lists them under the chart
+MIN_LABEL_SHARE = 4
 
 
 @st.cache_data
@@ -39,21 +41,21 @@ def colour(releases: list[str]) -> alt.Color:
     return alt.Color(
         "release:N",
         scale=alt.Scale(domain=domain, range=[RELEASE_COLOURS[RELEASE_ORDER.index(r)] for r in domain]),
-        legend=alt.Legend(title=None, orient="top"),
+        legend=alt.Legend(title="Release type", orient="top"),
     )
 
 
 def stacked_bars(data: pd.DataFrame, by: str, title: str, horizontal: bool) -> alt.Chart:
     if horizontal:
-        category = alt.Y(f"{by}:N", title=None, sort=[o for o in ORG_ORDER if o in set(data[by])],
-                         axis=alt.Axis(labelLimit=280))
+        category = alt.Y(f"{by}:N", title=title, sort=[o for o in ORG_ORDER if o in set(data[by])],
+                         axis=alt.Axis(labelLimit=280, titlePadding=32))
         position, label_position = alt.X, alt.X
     else:
         category = alt.X(f"{by}:O", title=title, axis=alt.Axis(labelAngle=0))
         position, label_position = alt.Y, alt.Y
     axis = alt.Axis(format="%", title="Share of notable models (%)")
     tooltip = [
-        alt.Tooltip(f"{by}:N", title=title or "Organisation type"),
+        alt.Tooltip(f"{by}:N", title=title),
         alt.Tooltip("release:N", title="Release"),
         alt.Tooltip("models:Q", title="Models"),
         alt.Tooltip("share:Q", title="Share (%)", format=".1f"),
@@ -65,13 +67,21 @@ def stacked_bars(data: pd.DataFrame, by: str, title: str, horizontal: bool) -> a
         order=alt.Order("order:Q"),
         tooltip=tooltip,
     )
-    # Segment labels so the values are readable without hovering; tiny segments are left unlabelled
-    labels = alt.Chart(data[data["share"] >= 7]).mark_text(color="black", fontSize=10).encode(
+    # Segment labels so the values are readable without hovering
+    labels = alt.Chart(data[data["share"] >= MIN_LABEL_SHARE]).mark_text(color="black", fontSize=10).encode(
         category,
         label_position("mid:Q"),
         text=alt.Text("share:Q", format=".0f"),
     )
     return (bars + labels).properties(height=60 * data[by].nunique() + 40 if horizontal else 360)
+
+
+def small_segments(data: pd.DataFrame, by: str) -> None:
+    small = data[data["share"] < MIN_LABEL_SHARE]
+    if not small.empty:
+        st.caption("Too small to label: " + "; ".join(
+            f"{row[by]} {row['release']} {row['share']:.1f}%" for _, row in small.iterrows()
+        ) + ".")
 
 
 def render() -> None:
@@ -102,7 +112,9 @@ def render() -> None:
         return
 
     st.subheader("How notable models were released, by year")
-    st.altair_chart(stacked_bars(shares(shown, "year"), "year", "Publication year", horizontal=False), use_container_width=True)
+    year_shares = shares(shown, "year")
+    st.altair_chart(stacked_bars(year_shares, "year", "Publication year", horizontal=False), use_container_width=True)
+    small_segments(year_shares, "year")
 
     # Compare only years where release type is recorded for at least 90% of models,
     # so a year with a big grey band (2015–2017) is never the baseline
@@ -113,12 +125,18 @@ def render() -> None:
     by_year = known.groupby("year")["release"].value_counts(normalize=True).unstack(fill_value=0) * 100
     if len(by_year) >= 2:
         y0, y1 = int(by_year.index.min()), int(by_year.index.max())
+        unreleased0, unreleased1 = by_year.loc[y0].get("Unreleased", 0), by_year.loc[y1].get("Unreleased", 0)
+        service0, service1 = by_year.loc[y0].get("API or hosted access", 0), by_year.loc[y1].get("API or hosted access", 0)
         st.markdown(
             f"**What this shows:** comparing years where release type is recorded for at least 90% of models, the unreleased share went from "
-            f"**{by_year.loc[y0].get('Unreleased', 0):.0f}%** in {y0} to **{by_year.loc[y1].get('Unreleased', 0):.0f}%** in {y1}, "
-            f"while API or hosted access went from **{by_year.loc[y0].get('API or hosted access', 0):.0f}%** to "
-            f"**{by_year.loc[y1].get('API or hosted access', 0):.0f}%**. Fewer models are kept in-house, but more are offered "
-            "only as a service: usable, yet controlled by the company that built them."
+            f"**{unreleased0:.0f}%** in {y0} to **{unreleased1:.0f}%** in {y1}, "
+            f"while API or hosted access went from **{service0:.0f}%** to **{service1:.0f}%**."
+            # Only draw the conclusion when the selected years actually show it
+            + (
+                " Fewer models are kept in-house, but more are offered only as a service: "
+                "usable, yet controlled by the company that built them."
+                if unreleased1 < unreleased0 and service1 > service0 else ""
+            )
         )
 
     st.subheader("Who releases open weights?")
@@ -127,15 +145,15 @@ def render() -> None:
         st.info("No models with a recorded organisation type in this range.")
     else:
         org_shares = shares(by_org, "org_type")
-        st.altair_chart(stacked_bars(org_shares, "org_type", "", horizontal=True), use_container_width=True)
+        st.altair_chart(stacked_bars(org_shares, "org_type", "Organisation type", horizontal=True), use_container_width=True)
+        small_segments(org_shares, "org_type")
         pivot = org_shares.pivot(index="org_type", columns="release", values="share").fillna(0)
         if {"Industry", "Academia"} <= set(pivot.index):
             st.markdown(
                 f"**What this shows:** {pivot.loc['Industry'].get('API or hosted access', 0):.0f}% of industry models are "
                 f"offered only through an API or hosted service, against {pivot.loc['Academia'].get('API or hosted access', 0):.0f}% "
-                f"for academia. Academia releases open weights more often "
-                f"({pivot.loc['Academia'].get('Open weights', 0):.0f}% vs {pivot.loc['Industry'].get('Open weights', 0):.0f}%), "
-                "so the service-only route to access is almost entirely an industry choice."
+                f"for academia. Open weights account for {pivot.loc['Academia'].get('Open weights', 0):.0f}% of academic models "
+                f"and {pivot.loc['Industry'].get('Open weights', 0):.0f}% of industry models."
             )
         counts = by_org.groupby("org_type").size()
         st.caption(
