@@ -46,7 +46,7 @@ def trend_chart(by_year: pd.DataFrame) -> alt.Chart:
             domain=["Share of recorded training compute", "Share of notable models"],
             range=[COMPUTE_COLOUR, MODELS_COLOUR],
         ),
-        legend=alt.Legend(title=None, orient="top", labelLimit=300),
+        legend=alt.Legend(title="Measure", orient="top", labelLimit=300),
     )
     base = alt.Chart(long).encode(
         x=alt.X("year:O", title="Publication year", axis=alt.Axis(labelAngle=0)),
@@ -68,7 +68,7 @@ def trend_chart(by_year: pd.DataFrame) -> alt.Chart:
 def ranking_chart(top: pd.DataFrame, colour: str) -> alt.Chart:
     bars = alt.Chart(top).mark_bar(color=colour).encode(
         x=alt.X("share:Q", title="Share of the year's total (%)", scale=alt.Scale(domain=[0, 100])),
-        y=alt.Y("org:N", sort="-x", title=None, axis=alt.Axis(labelLimit=260)),
+        y=alt.Y("org:N", sort="-x", title="Organisation", axis=alt.Axis(labelLimit=260)),
         tooltip=[alt.Tooltip("org:N", title="Organisation"), alt.Tooltip("share:Q", title="Share (%)", format=".1f")],
     )
     labels = bars.mark_text(align="left", dx=4, color="currentColor").encode(text=alt.Text("share:Q", format=".1f"))
@@ -100,9 +100,13 @@ def render() -> None:
     st.markdown(
         f"**What this shows:** from {start} to {end}, the top five organisations released on average "
         f"**{model_avg:.0f}%** of notable models but accounted for **{compute_avg:.0f}%** of recorded training compute. "
-        "Model output is spread across many organisations; the compute behind the largest models is not. "
-        "Neither line rises steadily, so the data supports *persistently high* concentration of compute "
-        "rather than a clear trend towards *more* concentration."
+        "Model output is spread across many organisations; the compute behind the largest models is not."
+        # The trend reading only holds across the whole period, not for any shorter range
+        + (
+            " Neither line rises steadily, so the data supports *persistently high* concentration of compute "
+            "rather than a clear trend towards *more* concentration."
+            if (start, end) == (first, last) else ""
+        )
     )
 
     st.subheader("Who are the top five?")
@@ -163,7 +167,7 @@ def render() -> None:
             "and half its compute.\n"
             "- **Compute share uses only models with recorded compute.** Coverage ranges from "
             f"{by_year['compute_coverage_pct'].min():.0f}% to {by_year['compute_coverage_pct'].max():.0f}% of models per year "
-            "and is lowest in recent years, when frontier labs disclose less.\n"
+            "and is lowest in recent years.\n"
             "- **Compute and model counts are not capability.** They show who builds and who spends, not whose "
             "models perform best.\n"
             "- **Notable models only.** Epoch AI includes models that meet its notability criteria, so smaller "
