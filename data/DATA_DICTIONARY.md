@@ -25,6 +25,7 @@ All processed files are rebuilt from the raw file by the scripts in `scripts/`; 
 - **Time coverage of the file:** 1950-07-02 to 2026-09-30 (`Publication date`)
 - **Time coverage used in the app:** 2015-01-01 to 2025-12-31 (782 models). 2026 is excluded as a partial year.
 - **Latest observation used:** 2025-12-31
+- **Transform:** none. The file is kept as downloaded; filtering to 2015–2025 happens in the steps described below.
 
 The file has 47 columns. The app uses the seven below; the others are kept unchanged so the file matches the source.
 
@@ -43,6 +44,8 @@ The file has 47 columns. The app uses the seven below; the others are kept uncha
 ## 2. Organisation credit
 
 - **File:** `data/processed/concentration_org_credit.csv`
+- **Source:** derived from Notable AI Models, Epoch AI, https://epoch.ai/data/notable_ai_models.csv
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), inherited from the source
 - **Primary key:** `Model`, `org`
 - **Time coverage:** 2015–2025 (781 models; the one model with no organisation is dropped)
 - **Latest observation:** 2025
@@ -66,6 +69,8 @@ The file has 47 columns. The app uses the seven below; the others are kept uncha
 ## 3. Concentration by year
 
 - **File:** `data/processed/concentration_by_year.csv`
+- **Source:** derived from Notable AI Models, Epoch AI, https://epoch.ai/data/notable_ai_models.csv
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), inherited from the source
 - **Primary key:** `year`
 - **Time coverage:** 2015–2025 (11 rows)
 - **Latest observation:** 2025
@@ -87,6 +92,8 @@ The file has 47 columns. The app uses the seven below; the others are kept uncha
 ## 4. Openness by model
 
 - **File:** `data/processed/openness_models.csv`
+- **Source:** derived from Notable AI Models, Epoch AI, https://epoch.ai/data/notable_ai_models.csv
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), inherited from the source
 - **Primary key:** `Model`
 - **Time coverage:** 2015–2025 (782 models)
 - **Latest observation:** 2025
@@ -110,19 +117,24 @@ Counts, 2015–2025: Open weights 310, Unreleased 255, API or hosted access 148,
 
 These tables are built in memory each time the Geography tab loads, by `flatten_attributions()` in `scripts/geography_processing.py`, and are not saved to `data/processed/`. They are rebuilt from the raw file every time, so they always match it.
 
+- **Source:** derived from Notable AI Models, Epoch AI, https://epoch.ai/data/notable_ai_models.csv
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), inherited from the source
+- **Time coverage:** 2015–2025
+- **Latest observation:** 2025
+
 **Country table** (962 rows, 33 countries). Primary key: `CSV row`, `Country`.
 
-| Column | Type | Meaning |
-|---|---|---|
-| `Model` | text | Model name, from the source |
-| `Year` | integer | Year of `Publication date` (2015–2025) |
-| `CSV row` | integer | Row number of the model in the raw CSV, counting the header as row 1, so any number can be traced back |
-| `Country` | text | One country from `Country (of organization)`; a model with several countries appears once per country |
+| Column | Type | Unit | Meaning |
+|---|---|---|---|
+| `Model` | text | | Model name, from the source |
+| `Year` | integer | calendar year | Year of `Publication date` (2015–2025) |
+| `CSV row` | integer | row number | Row number of the model in the raw CSV, counting the header as row 1, so any number can be traced back |
+| `Country` | text | | One country from `Country (of organization)`; a model with several countries appears once per country |
 
 **Organisation table** (1,134 rows). Primary key: `CSV row`, `Country`, `Organisation`. Same columns plus:
 
-| Column | Type | Meaning |
-|---|---|---|
-| `Organisation` | text | Organisation paired with `Country`, after the same parent-company merging as Concentration |
+| Column | Type | Unit | Meaning |
+|---|---|---|---|
+| `Organisation` | text | | Organisation paired with `Country`, after the same parent-company merging as Concentration |
 
 **Transform:** split `Country (of organization)` and `Organization` on commas. Countries are de-duplicated within each model. Organisations are paired with countries by position only when both lists have the same length; models where the lengths differ are left out of the organisation table rather than guessed.
