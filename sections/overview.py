@@ -1,7 +1,4 @@
-"""Alternative Overview design: composition first, growth second.
-Drop into sections/overview.py. Existing app.py remains unchanged.
-Requires streamlit, pandas, plotly; openpyxl if reading XLSX.
-"""
+"""Overview: which sectors develop notable AI models, 2015–2025."""
 from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
@@ -19,6 +16,7 @@ COLORS = {
 }
 
 
+@st.cache_data
 def _load_data():
     if not DATA_PATH.is_file():
         return None
@@ -58,7 +56,7 @@ def _sector(value):
 
 
 def render(df=None):
-    st.markdown("### Who is developing notable AI models?")
+    st.header("Overview: who develops notable AI models?")
     st.caption("Epoch AI · Notable AI Models · 2015–2025 | Model output by developing-organisation sector")
     if df is None:
         df = _load_data()
@@ -90,9 +88,8 @@ def render(df=None):
     data["Sector"] = data["Organization categorization"].map(_sector)
 
     years = sorted(data["Year"].unique().tolist())
-    st.markdown("#### Explore the overview")
     if len(years) > 1:
-        first, last = st.slider("Year range", min_value=years[0], max_value=years[-1], value=(years[0], years[-1]), key="overview_alt_range")
+        first, last = st.slider("Year range", min_value=years[0], max_value=years[-1], value=(years[0], years[-1]), key="overview_range")
     else:
         first = last = years[0]
         st.caption(f"Year: {first}")
@@ -137,7 +134,7 @@ def render(df=None):
     left = st.container()
     right = st.container()
     with left:
-        st.markdown("#### 01 · Who accounts for model output?")
+        st.subheader("Who accounts for model output?")
         st.caption("Composition by publication year · every column totals 100%")
         fig_share = go.Figure()
         for sector in ORDER:
@@ -155,9 +152,9 @@ def render(df=None):
             hovermode="closest", yaxis=dict(title="Share of annual models (%)", range=[0, 100], ticksuffix="%"),
             xaxis=dict(title=None, dtick=1, type="linear"),
         )
-        st.plotly_chart(fig_share, use_container_width=True, key="overview_alt_share")
+        st.plotly_chart(fig_share, use_container_width=True, key="overview_share")
     with right:
-        st.markdown("#### 02 · How has model output changed by sector?")
+        st.subheader("How has model output changed by sector?")
         st.caption("Annual model counts · click a sector in the legend to show or hide it")
         growth = go.Figure()
         for sector in ORDER:
@@ -191,7 +188,7 @@ def render(df=None):
             ),
             yaxis=dict(title="Number of models", rangemode="tozero"),
         )
-        st.plotly_chart(growth, use_container_width=True, key="overview_alt_growth")
+        st.plotly_chart(growth, use_container_width=True, key="overview_growth")
 
     st.caption("Interpretation: changes in sector share are not equivalent to changes in model counts. Sector-level output does not establish concentration among individual organisations.")
 
@@ -203,4 +200,4 @@ def render(df=None):
         source_categories = (selected.groupby(["Organization categorization", "Sector"], dropna=False).size().reset_index(name="Models"))
         st.dataframe(source_categories, hide_index=True, use_container_width=True)
         st.dataframe(counts.rename(columns={"Count": "Models", "Share": "Share (%)"}), hide_index=True, use_container_width=True)
-        st.download_button("Download annual sector calculations", counts.to_csv(index=False).encode("utf-8"), file_name="overview_alternative_audit.csv", mime="text/csv")
+        st.download_button("Download annual sector calculations", counts.to_csv(index=False).encode("utf-8"), file_name="overview_sector_counts.csv", mime="text/csv")

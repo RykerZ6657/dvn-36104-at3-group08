@@ -10,6 +10,7 @@ All processed files are rebuilt from the raw file by the scripts in `scripts/`; 
 | Concentration by year | `data/processed/concentration_by_year.csv` | 11 | `year` | `scripts/prepare_concentration.py` | Concentration, opening answer |
 | Openness by model | `data/processed/openness_models.csv` | 782 | `Model` | `scripts/prepare_openness.py` | Openness, opening answer |
 | Country and organisation attributions | built in memory, not saved | 962 / 1,134 | see below | `scripts/geography_processing.py` | Geography |
+| Sector counts by year | built in memory, not saved | 55 | `Year`, `Sector` | `sections/overview.py` | Overview |
 
 ---
 
@@ -138,3 +139,24 @@ These tables are built in memory each time the Geography tab loads, by `flatten_
 | `Organisation` | text | | Organisation paired with `Country`, after the same parent-company merging as Concentration |
 
 **Transform:** split `Country (of organization)` and `Organization` on commas. Countries are de-duplicated within each model. Organisations are paired with countries by position only when both lists have the same length; models where the lengths differ are left out of the organisation table rather than guessed.
+
+## 6. Sector counts by year (Overview)
+
+This table is built in memory each time the Overview tab loads, by `render()` in `sections/overview.py`, and is not saved to `data/processed/`. The same table can be downloaded from the tab's audit panel as `overview_sector_counts.csv`.
+
+- **Source:** derived from Notable AI Models, Epoch AI, https://epoch.ai/data/notable_ai_models.csv
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), inherited from the source
+- **Time coverage:** 2015–2025
+- **Latest observation:** 2025
+
+55 rows (11 years × 5 sectors) for the full year range; fewer when the year slider is narrowed. Primary key: `Year`, `Sector`.
+
+| Column | Type | Unit | Meaning |
+|---|---|---|---|
+| `Year` | integer | calendar year | Year of `Publication date` (2015–2025) |
+| `Sector` | text | | Industry, Academia, Industry - Academia Collaboration, Other or Unknown |
+| `Count` | integer | models | Notable models in that sector and year |
+| `Total` | integer | models | All notable models in that year, including Other and Unknown |
+| `Share` | float | percent | `Count` ÷ `Total` × 100 |
+
+**Transform:** keep models with a publication date in 2015–2025 (782 models). Split `Organization categorization` on commas, trim and lower-case each label, and remove duplicates. Only industry gives Industry, only academia gives Academia, and industry with academia gives Industry - Academia Collaboration. Any other label or combination gives Other, and a missing label gives Unknown. Count models per year and sector, fill missing combinations with 0, and divide by the year's total. The tab stops with an error if the sector counts do not add up to the yearly total.
