@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-DATA_PATH = Path("/Users/hienlai/Desktop/Data visualization/AT3/data/raw/notable_ai_models.csv")  # EDIT to match your actual file
+DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "notable_ai_models.csv"
 MIN_YEAR, MAX_YEAR = 2015, 2025
 ORDER = ["Academia", "Industry - Academia Collaboration", "Industry", "Other", "Unknown"]
 COLORS = {
@@ -63,7 +63,7 @@ def render(df=None):
     if df is None:
         df = _load_data()
     if df is None:
-        st.info("Set DATA_PATH in sections/overview.py to your existing Epoch AI CSV or Excel file, or pass a DataFrame to render(df).")
+        st.info("Place the Epoch AI CSV at data/raw/notable_ai_models.csv in the repository, or pass a DataFrame to render(df).")
         return
 
     required = {"Model", "Publication date", "Organization categorization"}
@@ -115,7 +115,8 @@ def render(df=None):
     first_seen, last_seen = int(totals.index[0]), int(totals.index[-1])
     industry = counts[counts["Sector"].eq("Industry")].set_index("Year")
     industry_latest = float(industry.loc[last_seen, "Share"])
-    industry_delta = industry_latest - float(industry.loc[first_seen, "Share"])
+    industry_first = float(industry.loc[first_seen, "Share"])
+    industry_delta = industry_latest - industry_first
     industry_count = int(industry.loc[last_seen, "Count"])
     latest_total = int(totals.loc[last_seen])
 
@@ -124,8 +125,17 @@ def render(df=None):
     k2.metric(f"Industry share · {last_seen}", f"{industry_latest:.1f}%", help=f"{industry_count:,} industry models ÷ {latest_total:,} total models in {last_seen}.")
     k3.metric(f"Industry share shift · {first_seen}–{last_seen}", f"{industry_delta:+.1f} pp" if first_seen != last_seen else "N/A", help="Percentage-point change in Industry's annual share between selected endpoints; not a percentage growth rate.")
 
+    finding = (
+        f"Industry accounted for {industry_latest:.1f}% of notable models "
+        f"published in {last_seen}"
+    )
+    if first_seen != last_seen:
+        finding += f", compared with {industry_first:.1f}% in {first_seen}"
+    st.markdown(f"**Main finding.** {finding}.")
+
     st.markdown("---")
-    left, right = st.columns([1.8, 1], gap="large")
+    left = st.container()
+    right = st.container()
     with left:
         st.markdown("#### 01 · Who accounts for model output?")
         st.caption("Composition by publication year · every column totals 100%")
@@ -147,18 +157,38 @@ def render(df=None):
         )
         st.plotly_chart(fig_share, use_container_width=True, key="overview_alt_share")
     with right:
-        st.markdown("#### 02 · Is total output growing?")
-        st.caption("All notable models published per year · absolute counts")
+        st.markdown("#### 02 · How has model output changed by sector?")
+        st.caption("Annual model counts · click a sector in the legend to show or hide it")
         growth = go.Figure()
-        growth.add_trace(go.Scatter(
-            x=totals.index.astype(int), y=totals.to_numpy(), mode="lines+markers",
-            line=dict(color="#5475D8", width=3), marker=dict(size=8),
-            fill="tozeroy", fillcolor="rgba(84,117,216,.12)", name="All sectors",
-            hovertemplate="Year: %{x}<br>Models: %{y:,}<extra></extra>",
-        ))
+        for sector in ORDER:
+            part = counts[counts["Sector"].eq(sector)].sort_values("Year")
+            growth.add_scatter(
+                x=part["Year"],
+                y=part["Count"],
+                name=sector,
+                mode="lines+markers",
+                line=dict(color=COLORS[sector], width=2.5),
+                marker=dict(size=6),
+                customdata=part[["Share"]].to_numpy(),
+                hovertemplate=(
+                    "<b>%{fullData.name}</b><br>Year: %{x}"
+                    "<br>Models: %{y:,}<br>Share of annual models: %{customdata[0]:.1f}%"
+                    "<extra></extra>"
+                ),
+            )
         growth.update_layout(
-            height=440, margin=dict(l=10, r=10, t=20, b=10), showlegend=False,
-            xaxis=dict(title=None, dtick=1, type="linear"),
+            height=440,
+            margin=dict(l=10, r=10, t=20, b=10),
+            legend=dict(orientation="h", y=-0.2, x=0, title=None),
+            xaxis=dict(
+                title=None,
+                tickmode="linear",
+                tick0=first_seen,
+                dtick=1,
+                type="linear",
+                range=[first_seen - 0.5, last_seen + 0.5],
+                automargin=True,
+            ),
             yaxis=dict(title="Number of models", rangemode="tozero"),
         )
         st.plotly_chart(growth, use_container_width=True, key="overview_alt_growth")
