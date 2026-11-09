@@ -7,13 +7,26 @@ import streamlit as st
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "notable_ai_models.csv"
 MIN_YEAR, MAX_YEAR = 2015, 2025
 ORDER = ["Academia", "Industry - Academia Collaboration", "Industry", "Other", "Unknown"]
+# Okabe-Ito colours, as in the other tabs; pairs stay distinguishable under protan, deutan and tritan simulation
 COLORS = {
-    "Academia": "#28A58B",
-    "Industry - Academia Collaboration": "#E9AD49",
-    "Industry": "#5475D8",
-    "Other": "#8490A4",
-    "Unknown": "#CBD0DA",
+    "Academia": "#009E73",
+    "Industry - Academia Collaboration": "#E69F00",
+    "Industry": "#0072B2",
+    "Other": "#555555",
+    "Unknown": "#BBBBBB",
 }
+# Label colour inside each bar segment, chosen for contrast with the segment colour
+TEXT_COLORS = {
+    "Academia": "black",
+    "Industry - Academia Collaboration": "black",
+    "Industry": "white",
+    "Other": "white",
+    "Unknown": "black",
+}
+# Segments below this share (%) are too thin for a label, so they are listed under the chart
+MIN_LABEL_SHARE = 4
+# Lines labelled with their counts; Other and Unknown stay near zero, start hidden and are listed under the chart
+LINE_LABELLED = ["Academia", "Industry - Academia Collaboration", "Industry"]
 
 
 @st.cache_data
@@ -53,6 +66,25 @@ def _sector(value):
         return "Academia"
 
     return "Other"
+
+
+def _label_positions(counts):
+    """Place each count label above or below its point so labels on nearby lines do not overlap."""
+    positions = {}
+    labelled = counts[counts["Sector"].isin(LINE_LABELLED)]
+    for year, group in labelled.groupby("Year"):
+        values = group.set_index("Sector")["Count"]
+        ranked = values.sort_values(ascending=False, kind="stable").index.tolist()
+        top, middle, bottom = ranked
+        positions[(year, top)] = "top center"
+        positions[(year, bottom)] = "bottom center"
+        if values[top] - values[middle] >= 8:
+            positions[(year, middle)] = "top center"
+        elif values[middle] - values[bottom] >= 8:
+            positions[(year, middle)] = "bottom center"
+        else:
+            positions[(year, middle)] = "middle right"
+    return positions
 
 
 def render(df=None):
@@ -142,28 +174,45 @@ def render(df=None):
             fig_share.add_bar(
                 x=part["Year"], y=part["Share"], name=sector,
                 marker_color=COLORS[sector],
+                text=[f"{v:.1f}%" if v >= MIN_LABEL_SHARE else "" for v in part["Share"]],
+                textposition="inside", insidetextanchor="middle", textangle=0,
+                textfont=dict(color=TEXT_COLORS[sector], size=10),
                 customdata=part[["Count", "Total"]].to_numpy(),
                 hovertemplate=("<b>%{fullData.name}</b><br>Year: %{x}<br>Share: %{y:.1f}%"
                                "<br>Models: %{customdata[0]:,}<br>Annual total: %{customdata[1]:,}<extra></extra>"),
             )
         fig_share.update_layout(
-            barmode="stack", height=440, margin=dict(l=10, r=10, t=20, b=10),
-            legend=dict(orientation="h", y=-0.2, x=0, title=None),
+            barmode="stack", height=480, margin=dict(l=10, r=10, t=40, b=10),
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0, title=dict(text="Sector")),
+            uniformtext=dict(minsize=10, mode="show"),
             hovermode="closest", yaxis=dict(title="Share of annual models (%)", range=[0, 100], ticksuffix="%"),
-            xaxis=dict(title=None, dtick=1, type="linear"),
+            xaxis=dict(title="Publication year", dtick=1, type="linear"),
         )
         st.plotly_chart(fig_share, use_container_width=True, key="overview_share")
+        small = counts[(counts["Share"] > 0) & (counts["Share"] < MIN_LABEL_SHARE)].sort_values(["Year", "Sector"])
+        if not small.empty:
+            st.caption(
+                f"Segments under {MIN_LABEL_SHARE}% are too thin to label: "
+                + "; ".join(f"{r.Year} {r.Sector} {r.Share:.1f}% ({r.Count} of {r.Total})" for r in small.itertuples())
+            )
     with right:
         st.subheader("How has model output changed by sector?")
         st.caption("Annual model counts · click a sector in the legend to show or hide it")
+        ymax = float(counts["Count"].max())
         growth = go.Figure()
+        positions = _label_positions(counts)
         for sector in ORDER:
             part = counts[counts["Sector"].eq(sector)].sort_values("Year")
+            labelled = sector in LINE_LABELLED
             growth.add_scatter(
                 x=part["Year"],
                 y=part["Count"],
                 name=sector,
-                mode="lines+markers",
+                mode="lines+markers+text" if labelled else "lines+markers",
+                visible=True if labelled else "legendonly",
+                text=part["Count"] if labelled else None,
+                textposition=[positions[(y, sector)] for y in part["Year"]] if labelled else None,
+                textfont=dict(size=10),
                 line=dict(color=COLORS[sector], width=2.5),
                 marker=dict(size=6),
                 customdata=part[["Share"]].to_numpy(),
@@ -175,10 +224,10 @@ def render(df=None):
             )
         growth.update_layout(
             height=440,
-            margin=dict(l=10, r=10, t=20, b=10),
-            legend=dict(orientation="h", y=-0.2, x=0, title=None),
+            margin=dict(l=10, r=10, t=40, b=10),
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0, title=dict(text="Sector")),
             xaxis=dict(
-                title=None,
+                title="Publication year",
                 tickmode="linear",
                 tick0=first_seen,
                 dtick=1,
@@ -186,15 +235,25 @@ def render(df=None):
                 range=[first_seen - 0.5, last_seen + 0.5],
                 automargin=True,
             ),
-            yaxis=dict(title="Number of models", rangemode="tozero"),
+            yaxis=dict(title="Number of models", range=[-0.06 * ymax, ymax * 1.12]),
         )
         st.plotly_chart(growth, use_container_width=True, key="overview_growth")
+        quiet = [sector for sector in ORDER if sector not in LINE_LABELLED]
+        quiet_counts = counts[counts["Sector"].isin(quiet)]
+        listed = []
+        for sector in quiet:
+            part = quiet_counts[quiet_counts["Sector"].eq(sector)].sort_values("Year")
+            listed.append(f"{sector}: " + ", ".join(f"{y} {c}" for y, c in zip(part["Year"], part["Count"])))
+        st.caption(
+            f"{' and '.join(quiet)} stay at {int(quiet_counts['Count'].max())} models a year or fewer, "
+            "so they are hidden here to keep the labels readable; click them in the legend to show them. " + " · ".join(listed)
+        )
 
     st.caption("Interpretation: changes in sector share are not equivalent to changes in model counts. Sector-level output does not establish concentration among individual organisations.")
 
     with st.expander("Data checks, classification and calculation audit"):
         st.write(f"Source rows: **{raw_rows:,}** · Missing/unparseable dates: **{bad_dates:,}** · Records in {MIN_YEAR}–{MAX_YEAR}: **{len(data):,}** · Selected rows: **{len(selected):,}**")
-        st.write("Source categories Industry, Academia, and Industry - Academia Collaboration are mapped only from exact standardised values. Every other recorded label is Other; missing sector labels are Unknown. All categories remain in the denominator.")
+        st.write("Each Organization categorization value is split on commas, trimmed, lower-cased and de-duplicated. Only Industry gives Industry, only Academia gives Academia, and Industry with Academia gives Industry - Academia Collaboration. Any other label or combination is Other, and a missing label is Unknown. All categories remain in the denominator.")
         st.write("Share = model count for sector and publication year ÷ all model records in that year × 100. Annual model counts are not adjusted for total AI activity outside this dataset.")
         st.write("Publication dates may include source-imputed month/day values, so visual comparisons use years only.")
         source_categories = (selected.groupby(["Organization categorization", "Sector"], dropna=False).size().reset_index(name="Models"))
