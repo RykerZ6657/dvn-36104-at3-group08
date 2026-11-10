@@ -40,6 +40,9 @@ def trend_chart(by_year: pd.DataFrame) -> alt.Chart:
         "top5_model_share_pct": "Share of notable models",
         "top5_compute_share_pct": "Share of recorded training compute",
     })
+    long = long.sort_values(["measure", "year"])
+    share = long.groupby("measure")["share"]
+    long["dip"] = (long["share"] < share.shift(1)) & (long["share"] < share.shift(-1))
     colour = alt.Color(
         "measure:N",
         scale=alt.Scale(
@@ -61,8 +64,11 @@ def trend_chart(by_year: pd.DataFrame) -> alt.Chart:
     lines = base.mark_line(point=True, strokeWidth=3)
     # Values printed on the chart so nothing depends on hovering
     # One decimal, so 99.9% is not shown as a misleading 100%
-    labels = base.mark_text(dy=-10, fontSize=10).encode(text=alt.Text("share:Q", format=".1f"))
-    return (lines + labels).properties(height=360)
+    # A label sits below its point at a dip, where the line would otherwise run through it
+    text = alt.Text("share:Q", format=".1f")
+    above = base.transform_filter(~alt.datum.dip).mark_text(dy=-10, fontSize=10).encode(text=text)
+    below = base.transform_filter(alt.datum.dip).mark_text(dy=14, fontSize=10).encode(text=text)
+    return (lines + above + below).properties(height=360)
 
 
 def ranking_chart(top: pd.DataFrame, colour: str) -> alt.Chart:
@@ -98,7 +104,8 @@ def render() -> None:
     model_avg = shown["top5_model_share_pct"].mean()
     compute_avg = shown["top5_compute_share_pct"].mean()
     st.markdown(
-        f"**What this shows:** from {start} to {end}, the top five organisations released on average "
+        f"**What this shows:** {f'in {start}' if start == end else f'from {start} to {end}'}, "
+        f"the top five organisations released {'' if start == end else 'on average '}"
         f"**{model_avg:.0f}%** of notable models but accounted for **{compute_avg:.0f}%** of recorded training compute. "
         "Model output is spread across many organisations; the compute behind the largest models is not."
         # The trend reading only holds across the whole period, not for any shorter range
