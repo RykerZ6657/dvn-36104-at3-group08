@@ -177,6 +177,8 @@ def render() -> None:
             "and is lowest in recent years.\n"
             "- **Compute and model counts are not capability.** They show who builds and who spends, not whose "
             "models perform best.\n"
+            "- **Models with no recorded organisation are left out.** There is one, from 2015, so this tab counts "
+            "28 models in 2015 where the Overview counts 29.\n"
             "- **Notable models only.** Epoch AI includes models that meet its notability criteria, so smaller "
             "organisations' work is under-represented.\n"
             "- Source: Epoch AI, *Notable AI Models* (CC BY 4.0), downloaded 21 Oct 2026; 2026 is excluded as a partial year."
